@@ -1,24 +1,26 @@
 # Schallern — Whitepaper Founder Collection
 
-**Versi 0.1 · Draf kerja · 16 Oktober 2026 · Culturetek Pte. Ltd., Singapura**
+**Versi 0.2 · Draf kerja · 18 Oktober 2026 · Culturetek Pte. Ltd., Singapura**
 
 > Flip the World. Satu lemparan. Satu tembok. Milimeter yang menentukan.
 
 ## 1. Abstrak
 
-Schallern adalah game lempar koin berfisika nyata yang dimainkan di browser: lempar koin ke tembok, koin yang tepinya berhenti paling dekat ke tembok menang. Game ini adalah versi modern dari permainan halaman sekolah yang dimainkan dengan uang susu di Jerman era 1980-an. Demo gratis yang bisa dimainkan dengan tiga arena dan tiga karakter sudah tersedia di https://schallern.io/play/.
+Schallern adalah game lempar koin yang dikalibrasi secara fisik dan dimainkan di browser: lempar koin ke arah tembok; koin yang tepi terdekatnya berhenti paling dekat ke tembok menang. Game ini adalah versi modern dari permainan halaman sekolah yang dimainkan dengan uang susu di Jerman era 1980-an. Demo gratis yang bisa dimainkan dengan tiga arena dan tiga karakter sudah tersedia di https://schallern.io/play/.
 
 **Founder Collection** adalah seri terencana berisi **10.000 koleksi digital di Solana** (koin dan karakter). Founder Collectibles bersifat kosmetik: mereka mengubah tampilan koin dan avatar pemain, tetapi tidak pernah mengubah fisika, geometri, atau peluang. Mint ini mendanai tahap pengembangan game berikutnya. Whitepaper ini menjelaskan game, koleksi, mekanisme mint, penggunaan dana, peta jalan, dan tim, serta memisahkan apa yang sudah aktif hari ini dari apa yang direncanakan.
 
 ## 2. Game
 
-**Aturan.** Satu tembok, satu koin per lemparan, tiga ronde per pertandingan. Setelah tiga ronde, jumlah jarak terkecil menang. Lemparan yang tidak pernah menyentuh tembok, keluar jalur, melewati tembok, atau memantul balik lebih dari 150 cm adalah foul dan dihitung sebagai jarak maksimum yang dipublikasikan.
+**Aturan.** Satu tembok, satu koin per lemparan, tiga ronde per pertandingan; total terkecil menang. Skor sebuah lemparan adalah jarak dalam milimeter dari tepi koin terdekat ke tembok setelah koin berhenti. Koin **tidak** harus menyentuh tembok. Koin yang tetap bersandar di tembok (leaner) mendapat skor 0 mm. Kamera, bayangan, dan visual tidak pernah menentukan pemenang; hasil fisikalah yang menentukan.
 
-**Pengukuran.** Jarak diukur dari tepi koin terdekat ke tembok setelah koin berhenti, dikuantisasi ke grid milimeter yang dipublikasikan. Kamera, bayangan, dan visual tidak pernah menentukan pemenang; hasil fisikalah yang menentukan.
+**Pelanggaran dan lemparan tidak sah.** Satu-satunya pelanggaran adalah koin yang terbang melewati tembok. Lemparan tidak sah jika sentuhan pertama koin dengan tanah kurang dari 2 m di depan garis lempar (mendarat tepat di garis 2 m tetap sah). Pelanggaran atau lemparan tidak sah dihitung dengan jarak ronde; tidak ada lemparan sah yang bisa mendapat skor lebih buruk dari itu.
 
-**Fisika.** Koin adalah cakram tipis kaku yang disimulasikan pada langkah tetap 240 Hz dengan restitusi yang bergantung pada kecepatan, gesekan gelinding per permukaan (aspal, pasir, marmer), dan material tembok (beton, batu pasir, lak). Setiap pemain dalam satu ronde melempar dengan jarak, permukaan, dan tembok yang sama. Lemparan bersifat deterministik untuk input yang sama.
+**Kartu ronde.** Sebelum setiap ronde, sebuah kartu menampilkan kondisi yang sama untuk setiap pemain: jarak lempar antara 6 dan 10 m dengan angka tidak bulat (misalnya 7,43 m), koin ronde dari katalog koin asli dalam ukuran aslinya, serta bidang tanah dan tembok yang terlihat (misalnya retakan, kerikil, bagian licin, atau pelat logam) dan kemiringannya.
 
-**Kontrol.** Seret ke bawah untuk tenaga, seret ke samping untuk arah, slider untuk lengkung; mouse dan sentuhan berbagi batas input ternormalisasi yang sama. Pelepasan ditampilkan dalam gerak lambat dengan tangan lima jari dan jentikan jempol.
+**Fisika.** Koin adalah cakram tipis dengan data koin asli, disimulasikan dengan gesekan, hambatan gelinding, dan pantulan per permukaan (aspal, pasir, marmer) dan per material tembok. Model ini dikalibrasi secara fisik berdasarkan hasil pengukuran yang telah dipublikasikan; kalibrasi terhadap rekaman lemparan nyata masih menunggu, jadi kami belum menyebutnya fisika nyata. Simulasinya deterministik: input yang sama memberikan hasil yang sama di setiap perangkat.
+
+**Kontrol.** Empat gaya lempar: Peluncur (rendah dan datar), Setengah busur, Lob tinggi, dan Tampar dinding, masing-masing dengan rentang kecepatan dan lengkungnya sendiri. Tekan dan tarik ke belakang untuk tenaga dan arah, lengkungkan gerakan untuk putaran samping, lalu lepaskan saat cincin pelepasan yang menyusut menutup; timing dan tangan yang stabil menentukan kualitas pelepasan. Mouse dan sentuhan menggunakan input ternormalisasi yang sama.
 
 **Keadilan.** Tidak ada yang bisa dibeli pemain yang mengubah massa, diameter, gesekan, pantulan, atau presisi. Kelangkaan bersifat visual. Ini adalah aturan dasar proyek dan berlaku untuk setiap collectible yang dijelaskan di sini.
 
@@ -36,15 +38,15 @@ Poin demo tidak bernilai tunai. Tidak ada NFT, token, atau pembayaran yang dibua
 ## 4. Founder Collection
 
 - **Suplai:** 10.000 collectible, bernomor.
-- **Subjek:** koin Schallern (material, finishing, tepi, ukiran, patina) dan karakter bergaya figur milik game sendiri; tema arena opsional dari katalog 48 tembok terkenal.
+- **Subjek:** koin Schallern dalam delapan kategori trait yang terlihat: tingkat, material, finishing, tepi, motif (termasuk karakter game), inskripsi, latar (termasuk 48 tembok terkenal), dan efek.
 - **Standar:** Metaplex Core di Solana; setiap collectible adalah satu aset on-chain dalam koleksi terverifikasi dengan informasi royalti on-chain.
-- **Kelangkaan:** sistem trait (sekitar 8 hingga 12 kategori trait, 200 hingga 300 varian) memberi setiap karya peringkat kelangkaannya sendiri dari 1 hingga 10.000, ditambah lima tingkat pemasaran dan sejumlah kecil spesial 1/1. Kelangkaan hanya soal prestise.
-- **Reveal:** apakah pembeli memilih tingkatnya tanpa reveal acak, atau karya seni diungkap pada hari reveal, adalah keputusan produk yang masih terbuka; ini dipublikasikan sebelum mint dibuka.
-- **Hak karya seni:** holder menerima lisensi personal non-eksklusif atas karya seni mereka; merek kata SCHALLERN tetap milik operator. Teks lisensi final dipublikasikan bersama ketentuan mint.
+- **Kelangkaan:** 8 kategori trait dengan 129 nilai; setiap karya memiliki semua kategori dan peringkat kelangkaannya sendiri. Tingkat: 11 karya satu-satunya (1/1), 89 Legendary, 500 Epic, 1.400 Rare, 3.000 Uncommon, dan 5.000 Common. Kelangkaan hanya soal prestise visual.
+- **Pembagian acak dan reveal:** pembeli tidak memilih karya seni, kelangkaan, atau tingkat. Sampai sold out, setiap collectible menampilkan placeholder yang sama. Sebelum mint dibuka, hash provenance dari seluruh koleksi dalam urutan finalnya dipublikasikan dan disimpan on-chain. Setelah sold out, offset awal diambil dari slot Solana di masa depan yang sudah diumumkan sebelumnya, sehingga tidak ada seorang pun, termasuk tim, yang bisa mengatur siapa mendapat karya yang mana. Siapa pun dapat mencocokkan hasilnya dengan hash yang dipublikasikan.
+- **Hak karya seni:** holder boleh menggunakan karya seni collectible mereka secara komersial. Merek SCHALLERN (nama dan logo) dikecualikan dan tetap milik operator. Teks lisensi final dipublikasikan bersama ketentuan mint.
 
 ## 5. Apa yang didapat seorang founder, dan apa yang tidak
 
-**Didapat:** collectible sebagai skin lempar di dalam game begitu penautan dompet aktif; lencana Founder dengan nomor collectible di profil pemain; peran Founder dan kanal holder di Discord; hak suara untuk menentukan arena dan desain koin berikutnya; akses awal ke arena baru dalam mode uang mainan.
+**Didapat:** collectible sebagai skin lempar di dalam game begitu penautan dompet aktif; lencana Founder dengan nomor collectible di profil pemain; peran Founder dan kanal holder di Discord; hak suara untuk menentukan arena dan desain koin berikutnya; akses awal ke arena baru dalam mode uang mainan; hak menggunakan karya seni secara komersial (kecuali merek SCHALLERN).
 
 **Tidak didapat:** saham perusahaan, klaim atas laba, pembagian keuntungan, buy-back, atau kenaikan nilai, maupun keunggulan gameplay apa pun. Founder Collection adalah koleksi, bukan produk investasi. Pendanaan perusahaan apa pun adalah penawaran terpisah dengan struktur tersendiri (lihat bagian 10).
 
@@ -52,17 +54,19 @@ Poin demo tidak bernilai tunai. Tidak ada NFT, token, atau pembayaran yang dibua
 
 | Hal | Rencana |
 |---|---|
-| Chain dan standar | Solana, Metaplex Core, Core Candy Machine dengan Candy Guard |
-| Tingkat dan harga | #1–4.000 seharga 0,5 SOL · #4.001–7.000 seharga 1 SOL · #7.001–9.000 seharga 1,5 SOL · #9.001–10.000 seharga 2 SOL (model terencana; ketentuan final dipublikasikan sebelum mulai) |
-| Fase | tim dan OG → allowlist (terjamin, dibatasi per dompet) → undian waitlist → publik; tanggal diumumkan hanya di schallern.io dan di kanal pengumuman Discord |
-| Batas | batas mint per dompet per fase; pajak bot; setiap transaksi mint dibangun dan ditandatangani bersama oleh backend Schallern setelah captcha dan pemeriksaan laju |
+| Chain dan standar | Solana, Metaplex Core, satu Core Candy Machine dengan Candy Guard |
+| Tahap harga | ditentukan oleh jumlah yang terjual, bukan dipilih pembeli: #1–4.000 seharga 0,5 SOL · #4.001–7.000 seharga 1 SOL · #7.001–9.000 seharga 1,5 SOL · #9.001–10.000 seharga 2 SOL. Pembeli awal membayar lebih murah; pembelian yang melewati batas tahap dihargai per karya (model terencana; ketentuan final dipublikasikan sebelum mulai) |
+| Pembagian | karya seni dan kelangkaan acak untuk seluruh 10.000 dari satu Candy Machine, diungkap setelah sold out (lihat bagian 4) |
+| Fase | OG → allowlist → publik; allowlist berarti akses lebih awal. Tanggal diumumkan hanya di schallern.io serta di kanal resmi Discord dan Telegram |
+| Batas | tidak ada batas per dompet di fase mana pun; perlindungan bot lewat captcha, pemeriksaan laju, dan pajak bot; setiap transaksi mint dibangun dan ditandatangani bersama oleh backend Schallern |
 | Di mana | hanya di schallern.io; tim tidak pernah mengirim pesan lebih dulu dan tidak pernah meminta seed phrase |
-| Treasury | hasil mint langsung masuk ke treasury multi-tanda tangan (2-dari-3) |
+| Ketersediaan | mint dibatasi secara geografis hanya jika ketentuan penyedia layanan kami mewajibkannya |
+| Treasury | hasil mint dibayarkan on-chain langsung ke dompet treasury operator |
 | Royalti | royalti sekunder 5 %, tertulis di dalam koleksi |
-| Penyimpanan | karya seni dan metadata di Arweave (permanen) |
-| Gladi | alur lengkap (koleksi, empat mesin tingkat dengan grup fase, bukti allowlist, penanda tangan backend, uji bot dan beban, unggahan Arweave, pembaruan reveal) telah dijalankan dan diverifikasi di Solana devnet pada Oktober 2026 |
+| Penyimpanan | karya seni dan metadata di Arweave (permanen); karya seni final diunggah saat reveal |
+| Gladi | alur lengkap (koleksi, satu Candy Machine dengan placeholder dan hash provenance on-chain, grup fase dan tahap harga, penanda tangan backend, pemeriksaan geo dan sanksi, uji bot dan beban, reveal dari slot Solana, verifikasi publik) telah dijalankan dan diverifikasi di Solana devnet pada Oktober 2026 |
 
-Biaya mint bagi pembeli adalah harga tingkat ditambah biaya jaringan Solana (sekitar 0,003 SOL per mint).
+Biaya mint bagi pembeli adalah harga tahap yang sedang berlaku ditambah biaya jaringan Solana (sekitar 0,003 SOL per mint).
 
 ## 7. Penggunaan dana
 
@@ -91,8 +95,8 @@ Operator sampai perusahaan game didirikan: **Culturetek Pte. Ltd., 6 Raffles Qua
 
 ## 12. Teknologi
 
-- **Game:** 3D real-time Three.js, fisika koin deterministik buatan sendiri, karakter ber-rig dengan animasi wajah, telemetri untuk penyeimbangan. Hasil dalam mode kompetitif akan dihitung di sisi server.
-- **Stack mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave via Irys, Helius RPC, penanda tangan backend Node, multisig Squads.
+- **Game:** 3D real-time Three.js, fisika koin buatan sendiri yang deterministik dan dikalibrasi secara fisik, karakter ber-rig dengan animasi wajah, telemetri untuk penyeimbangan. Hasil dalam mode kompetitif akan dihitung di sisi server.
+- **Stack mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, penanda tangan backend Node.
 - **Situs web:** schallern.io (bahasa Inggris lebih dulu, Jerman), halaman legal di schallern.io/legal.html.
 
 ## 13. Komunitas dan reward
@@ -108,3 +112,4 @@ Schallern sedang dikembangkan. Demo dapat berubah, koleksi dapat tertunda, jarin
 Kerangka hukum, ketentuan, privasi, dan disclaimer dikelola oleh Culturetek Pte. Ltd. dan dipublikasikan di https://schallern.io/legal.html. Dokumen ini bersifat informatif, bukan penawaran penjualan sekuritas, dan bukan nasihat investasi. Versi whitepaper ini dipublikasikan beserta tanggalnya di schallern.io/whitepaper/ dan di repositori publik yang ditautkan di sana.
 
 - v0.1 · 16 Oktober 2026 · draf kerja pertama
+- v0.2 · 18 Oktober 2026 · aturan game demo V04 (tidak wajib menyentuh tembok, satu-satunya pelanggaran = melewati tembok, garis pendaratan 2 m, kartu ronde, empat gaya lempar), istilah “dikalibrasi secara fisik”, pembagian acak dengan kelangkaan dan reveal setelah sold out, satu Candy Machine, tahap harga berdasarkan jumlah terjual, tanpa batas per dompet, sistem trait dan jumlah per tingkat, penggunaan komersial karya seni, pembatasan geografis

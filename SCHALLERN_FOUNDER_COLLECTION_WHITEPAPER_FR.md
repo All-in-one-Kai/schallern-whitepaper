@@ -1,24 +1,26 @@
 # Schallern — Whitepaper Founder Collection
 
-**Version 0.1 · Projet de travail · 16 octobre 2026 · Culturetek Pte. Ltd., Singapour**
+**Version 0.2 · Projet de travail · 18 octobre 2026 · Culturetek Pte. Ltd., Singapour**
 
 > Flip the World. Un lancer. Un mur. Les millimètres décident.
 
 ## 1. Résumé
 
-Schallern est un jeu de lancer de pièces à physique réelle, joué dans le navigateur : lance une pièce contre un mur, la pièce dont le bord s’immobilise le plus près du mur gagne. Le jeu est une version moderne d’un jeu de cour de récré joué avec l’argent du lait dans l’Allemagne des années 1980. Une démo gratuite et jouable avec trois arènes et trois personnages est en ligne sur https://schallern.io/play/.
+Schallern est un jeu de lancer de pièces calibré physiquement, joué dans le navigateur : lance une pièce vers un mur ; la pièce dont le bord le plus proche s’immobilise le plus près du mur gagne. Le jeu est une version moderne d’un jeu de cour de récré joué avec l’argent du lait dans l’Allemagne des années 1980. Une démo gratuite et jouable avec trois arènes et trois personnages est en ligne sur https://schallern.io/play/.
 
 La **Founder Collection** est une série prévue de **10 000 objets de collection numériques sur Solana** (pièces et personnages). Les Founder Collectibles sont cosmétiques : ils changent l’apparence de la pièce et de l’avatar d’un joueur, jamais la physique, la géométrie ou les chances. Le mint finance la prochaine étape de développement du jeu. Ce whitepaper décrit le jeu, la collection, la mécanique du mint, l’emploi des fonds, la roadmap et l’équipe, et distingue ce qui est en ligne aujourd’hui de ce qui est prévu.
 
 ## 2. Le jeu
 
-**Règle.** Un mur, une pièce par lancer, trois manches par match. Après trois manches, la plus petite somme des distances gagne. Un lancer qui ne touche jamais le mur, sort du couloir, passe par-dessus le mur ou rebondit de plus de 150 cm est une faute et compte pour la distance maximale publiée.
+**Règle.** Un mur, une pièce par lancer, trois manches par match ; le plus petit total gagne. Un lancer compte la distance en millimètres entre le bord le plus proche de la pièce et le mur, une fois la pièce immobilisée. La pièce n’a **pas** besoin de toucher le mur. Une pièce restée appuyée contre le mur (pièce appuyée, ou leaner) compte 0 mm. La caméra, les ombres et les visuels ne décident jamais d’un vainqueur ; le résultat physique le fait.
 
-**Mesure.** La distance est mesurée du bord de la pièce le plus proche jusqu’au mur une fois la pièce immobilisée, quantifiée sur une grille millimétrique publiée. La caméra, les ombres et les visuels ne décident jamais d’un vainqueur ; le résultat physique le fait.
+**Faute et lancers non valables.** La seule faute est une pièce qui passe par-dessus le mur. Un lancer est non valable si le premier contact de la pièce avec le sol se situe à moins de 2 m après la ligne de lancer (atterrir exactement sur la ligne des 2 m est valable). Une faute ou un lancer non valable compte pour la distance de la manche ; aucun lancer valable ne peut être compté plus mal.
 
-**Physique.** La pièce est un disque mince rigide simulé à un pas fixe de 240 Hz avec une restitution dépendante de la vitesse, une friction de roulement par surface (asphalte, sable, marbre) et des matériaux de mur (béton, grès, laque). Chaque joueur d’une manche lance avec la même distance, la même surface et le même mur. Les lancers sont déterministes pour une même entrée.
+**Carte de manche.** Avant chaque manche, une carte affiche les conditions, identiques pour tous les joueurs : la distance de lancer entre 6 et 10 m, en valeurs non rondes (par exemple 7,43 m), la pièce de la manche, tirée d’un catalogue de vraies pièces à leur taille réelle, ainsi que les zones visibles du sol et du mur (par exemple fissures, gravier, endroits lisses ou plaques de métal) et la pente.
 
-**Commandes.** Glisse vers le bas pour la puissance, latéralement pour la direction, un curseur pour la courbe ; souris et tactile partagent les mêmes limites d’entrée normalisées. Le lâcher est montré au ralenti avec une main à cinq doigts et une pichenette du pouce.
+**Physique.** La pièce est un disque mince doté des données de vraies pièces, simulé avec friction, résistance au roulement et rebond par surface (asphalte, sable, marbre) et par matériau de mur. Le modèle est calibré physiquement à partir de mesures publiées ; un calibrage sur de vrais lancers filmés reste à faire, c’est pourquoi nous ne parlons pas encore de physique réelle. La simulation est déterministe : la même entrée donne le même résultat sur chaque appareil.
+
+**Commandes.** Quatre styles de lancer : Glisseur (bas et à plat), Demi-arc, Lob haut et Claque au mur, chacun avec sa propre plage de vitesse et de courbe. Appuie et tire vers l’arrière pour la puissance et la direction, courbe le geste pour donner de l’effet latéral, puis lâche pendant que l’anneau de lâcher se resserre ; le timing et une main sûre font la qualité du lâcher. Souris et tactile utilisent la même entrée normalisée.
 
 **Équité.** Rien de ce qu’un joueur peut acheter ne change la masse, le diamètre, la friction, le rebond ou la précision. La rareté est visuelle. C’est la règle fondatrice du projet et elle s’applique à chaque objet de collection décrit ici.
 
@@ -36,15 +38,15 @@ Les points de la démo n’ont aucune valeur monétaire. Aucun NFT, token ou pai
 ## 4. La Founder Collection
 
 - **Offre :** 10 000 objets de collection, numérotés.
-- **Sujets :** pièces Schallern (matériaux, finitions, tranches, gravures, patine) et personnages dans le style des figures du jeu ; thèmes d’arènes optionnels issus d’un catalogue de 48 murs célèbres.
+- **Sujets :** pièces Schallern réparties en huit catégories de traits visibles : palier, matériau, finition, tranche, motif (dont les personnages du jeu), inscription, arrière-plan (dont 48 murs célèbres) et effet.
 - **Standard :** Metaplex Core sur Solana ; chaque objet de collection est un asset on-chain dans une collection vérifiée avec des informations de royalties on-chain.
-- **Rareté :** un système de traits (environ 8 à 12 catégories de traits, 200 à 300 variantes) donne à chaque pièce son propre rang de rareté de 1 à 10 000, plus cinq paliers marketing et un petit nombre de pièces spéciales 1/1. La rareté n’est que du prestige.
-- **Reveal :** savoir si les acheteurs choisissent leur palier sans reveal aléatoire, ou si l’artwork est révélé un jour de reveal, est une décision produit ouverte ; elle est publiée avant l’ouverture du mint.
-- **Droits sur l’artwork :** les holders reçoivent une licence personnelle et non exclusive sur leur artwork ; la marque verbale SCHALLERN reste à l’opérateur. Le texte final de la licence est publié avec les conditions du mint.
+- **Rareté :** 8 catégories de traits avec 129 valeurs ; chaque pièce possède toutes les catégories et son propre rang de rareté. Paliers : 11 pièces uniques (1/1), 89 Legendary, 500 Epic, 1 400 Rare, 3 000 Uncommon et 5 000 Common. La rareté n’est que du prestige visuel.
+- **Attribution aléatoire et reveal :** les acheteurs ne choisissent ni l’artwork, ni la rareté, ni le palier. Jusqu’à l’épuisement de la collection, chaque objet de collection affiche le même visuel provisoire. Avant l’ouverture du mint, un hash de provenance de la collection complète et ordonnée est publié et stocké on-chain. Une fois la collection épuisée, le décalage de départ est tiré d’un futur slot Solana annoncé à l’avance : personne, pas même l’équipe, ne peut décider qui reçoit quelle pièce. Chacun peut vérifier le résultat à l’aide du hash publié.
+- **Droits sur l’artwork :** les holders peuvent utiliser commercialement l’artwork de leur objet de collection. La marque SCHALLERN (nom et logo) en est exclue et reste à l’opérateur. Le texte final de la licence est publié avec les conditions du mint.
 
 ## 5. Ce qu’un Founder reçoit, et ce qu’un Founder ne reçoit pas
 
-**Reçoit :** l’objet de collection comme skin de lancer dans le jeu dès que la liaison du wallet est active ; un badge Founder avec le numéro de l’objet sur le profil de joueur ; le rôle Founder et les salons réservés aux holders sur Discord ; un vote sur les prochaines arènes et les prochains designs de pièces ; un accès anticipé aux nouvelles arènes en mode argent fictif.
+**Reçoit :** l’objet de collection comme skin de lancer dans le jeu dès que la liaison du wallet est active ; un badge Founder avec le numéro de l’objet sur le profil de joueur ; le rôle Founder et les salons réservés aux holders sur Discord ; un vote sur les prochaines arènes et les prochains designs de pièces ; un accès anticipé aux nouvelles arènes en mode argent fictif ; le droit d’utiliser commercialement l’artwork (hors marque SCHALLERN).
 
 **Ne reçoit pas :** une participation dans la société, un droit à des bénéfices, distributions, rachats ou plus-values, ni aucun avantage de gameplay. La Founder Collection est un objet de collection, pas un produit d’investissement. Tout financement de la société est une offre distincte, structurée séparément (voir section 10).
 
@@ -52,17 +54,19 @@ Les points de la démo n’ont aucune valeur monétaire. Aucun NFT, token ou pai
 
 | Élément | Plan |
 |---|---|
-| Chaîne et standard | Solana, Metaplex Core, Core Candy Machine avec Candy Guard |
-| Paliers et prix | #1–4 000 à 0,5 SOL · #4 001–7 000 à 1 SOL · #7 001–9 000 à 1,5 SOL · #9 001–10 000 à 2 SOL (modèle prévu ; les conditions définitives sont publiées avant le lancement) |
-| Phases | équipe et OG → Allowlist (garantie, limitée par wallet) → tirage au sort de la liste d’attente → public ; les dates sont annoncées uniquement sur schallern.io et dans le salon d’annonces du Discord |
-| Limites | limites de mint par wallet et par phase ; taxe anti-bot ; chaque transaction de mint est construite et cosignée par le backend Schallern après captcha et contrôles de fréquence |
+| Chaîne et standard | Solana, Metaplex Core, une seule Core Candy Machine avec Candy Guard |
+| Paliers de prix | fixés par le nombre de ventes, et non choisis par l’acheteur : #1–4 000 à 0,5 SOL · #4 001–7 000 à 1 SOL · #7 001–9 000 à 1,5 SOL · #9 001–10 000 à 2 SOL. Les premiers acheteurs paient moins ; un achat qui franchit un palier est facturé pièce par pièce (modèle prévu ; les conditions définitives sont publiées avant le lancement) |
+| Attribution | artwork et rareté aléatoires pour les 10 000 pièces depuis une seule Candy Machine, révélés une fois la collection épuisée (voir section 4) |
+| Phases | OG → Allowlist → public ; l’Allowlist donne un accès plus tôt. Les dates sont annoncées uniquement sur schallern.io et dans les canaux officiels Discord et Telegram |
+| Limites | aucune limite par wallet, quelle que soit la phase ; protection anti-bot par captcha, contrôles de fréquence et taxe anti-bot ; chaque transaction de mint est construite et cosignée par le backend Schallern |
 | Où | uniquement sur schallern.io ; l’équipe n’écrit jamais en premier et ne demande jamais de seed phrase |
-| Trésorerie | les produits du mint vont directement dans une trésorerie multi-signature (2 sur 3) |
+| Disponibilité | le mint n’est restreint géographiquement que là où les conditions de nos prestataires l’exigent |
+| Trésorerie | les produits du mint sont versés on-chain directement sur le wallet de trésorerie de l’opérateur |
 | Royalties | 5 % de royalties sur le marché secondaire, inscrites dans la collection |
-| Stockage | artwork et métadonnées sur Arweave (permanent) |
-| Répétition | le flux complet (collection, quatre machines de palier avec groupes de phases, preuves d’Allowlist, signataire backend, tests anti-bot et de charge, upload Arweave, mise à jour du reveal) a été exécuté et vérifié sur le devnet Solana en octobre 2026 |
+| Stockage | artwork et métadonnées sur Arweave (permanent) ; l’artwork définitif est uploadé au reveal |
+| Répétition | le flux complet (collection, une seule Candy Machine avec visuel provisoire et hash de provenance on-chain, groupes de phases et de paliers de prix, signataire backend, contrôles géographiques et de sanctions, tests anti-bot et de charge, reveal à partir d’un slot Solana, vérification publique) a été exécuté et vérifié sur le devnet Solana en octobre 2026 |
 
-Les coûts de mint pour les acheteurs sont le prix du palier plus les frais de réseau Solana (environ 0,003 SOL par mint).
+Les coûts de mint pour les acheteurs sont le prix du palier en cours plus les frais de réseau Solana (environ 0,003 SOL par mint).
 
 ## 7. Emploi des fonds
 
@@ -91,8 +95,8 @@ Opérateur jusqu’à la création de la société du jeu : **Culturetek Pte. L
 
 ## 12. Technologie
 
-- **Jeu :** 3D temps réel Three.js, physique de pièce déterministe sur mesure, personnages riggés avec animation faciale, télémétrie pour l’équilibrage. Les résultats des modes compétitifs seront calculés côté serveur.
-- **Stack de mint :** Metaplex Core, Core Candy Machine, Umi SDK, Arweave via Irys, Helius RPC, un signataire backend Node, multisig Squads.
+- **Jeu :** 3D temps réel Three.js, physique de pièce sur mesure, déterministe et calibrée physiquement, personnages riggés avec animation faciale, télémétrie pour l’équilibrage. Les résultats des modes compétitifs seront calculés côté serveur.
+- **Stack de mint :** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, un signataire backend Node.
 - **Site web :** schallern.io (anglais d’abord, allemand), pages légales sur schallern.io/legal.html.
 
 ## 13. Communauté et récompenses
@@ -108,3 +112,4 @@ Schallern est en développement. La démo peut changer, la collection peut être
 Le cadre juridique, les conditions, la confidentialité et les avertissements sont tenus à jour par Culturetek Pte. Ltd. et publiés sur https://schallern.io/legal.html. Ce document est informatif, il ne constitue ni une offre de vente de titres ni un conseil en investissement. Les versions de ce whitepaper sont publiées avec leur date sur schallern.io/whitepaper/ et dans le dépôt public qui y est lié.
 
 - v0.1 · 16 octobre 2026 · premier projet de travail
+- v0.2 · 18 octobre 2026 · règles du jeu de la démo V04 (toucher le mur n’est plus requis, seule faute = par-dessus le mur, ligne d’atterrissage à 2 m, carte de manche, quatre styles de lancer), formulation « calibré physiquement », attribution aléatoire avec raretés et reveal après épuisement de la collection, une seule Candy Machine, paliers de prix selon le nombre de ventes, aucune limite par wallet, système de traits et nombre de pièces par palier, usage commercial de l’artwork, restriction géographique

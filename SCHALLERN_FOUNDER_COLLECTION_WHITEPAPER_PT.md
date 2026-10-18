@@ -1,24 +1,26 @@
 # Schallern — Whitepaper da Founder Collection
 
-**Versão 0.1 · Rascunho de trabalho · 16 de outubro de 2026 · Culturetek Pte. Ltd., Singapura**
+**Versão 0.2 · Rascunho de trabalho · 18 de outubro de 2026 · Culturetek Pte. Ltd., Singapura**
 
 > Flip the World. Um arremesso. Uma parede. Milímetros decidem.
 
 ## 1. Resumo
 
-Schallern é um jogo de arremesso de moedas com física real jogado no navegador: arremesse uma moeda contra uma parede; a moeda cuja borda parar mais perto da parede vence. O jogo é uma versão moderna de um jogo de pátio de escola jogado com o dinheiro do leite na Alemanha dos anos 1980. Uma demo gratuita e jogável, com três arenas e três personagens, está no ar em https://schallern.io/play/.
+Schallern é um jogo de arremesso de moedas calibrado fisicamente, jogado no navegador: arremesse uma moeda em direção a uma parede; a moeda cuja borda mais próxima parar mais perto da parede vence. O jogo é uma versão moderna de um jogo de pátio de escola jogado com o dinheiro do leite na Alemanha dos anos 1980. Uma demo gratuita e jogável, com três arenas e três personagens, está no ar em https://schallern.io/play/.
 
 A **Founder Collection** é uma série planejada de **10.000 colecionáveis digitais na Solana** (moedas e personagens). Os Founder Collectibles são cosméticos: eles mudam a aparência da moeda e do avatar de um jogador, nunca mudam a física, a geometria ou as chances. O mint financia a próxima etapa de desenvolvimento do jogo. Este whitepaper descreve o jogo, a coleção, a mecânica do mint, o uso dos recursos, o roadmap e a equipe, e separa o que está no ar hoje do que está planejado.
 
 ## 2. O jogo
 
-**Regra.** Uma parede, uma moeda por arremesso, três rodadas por partida. Após três rodadas, vence a menor soma das distâncias. Um arremesso que nunca toca a parede, sai da pista, voa por cima da parede ou rebate mais de 150 cm é falta e conta a distância máxima publicada.
+**Regra.** Uma parede, uma moeda por arremesso, três rodadas por partida; vence o menor total. Cada arremesso vale a distância, em milímetros, da borda mais próxima da moeda até a parede, depois que a moeda para. A moeda **não** precisa tocar a parede. Uma moeda que fica encostada na parede (leaner) vale 0 mm. A câmera, as sombras e os visuais nunca decidem um vencedor; o resultado da física decide.
 
-**Medição.** A distância é medida da borda mais próxima da moeda até a parede depois que a moeda para, quantizada em uma grade milimétrica publicada. A câmera, as sombras e os visuais nunca decidem um vencedor; o resultado da física decide.
+**Falta e arremessos inválidos.** A única falta é uma moeda que voa por cima da parede. Um arremesso é inválido se o primeiro contato da moeda com o chão ficar a menos de 2 m depois da linha de arremesso (cair exatamente na linha de 2 m é válido). Uma falta ou um arremesso inválido conta a distância da rodada; nenhum arremesso válido pode pontuar pior do que isso.
 
-**Física.** A moeda é um disco fino e rígido, simulado em um passo fixo de 240 Hz com restituição dependente da velocidade, atrito de rolamento por superfície (asfalto, areia, mármore) e materiais de parede (concreto, arenito, laca). Todos os jogadores de uma rodada arremessam sob a mesma distância, superfície e parede. Os arremessos são determinísticos para a mesma entrada.
+**Carta da rodada.** Antes de cada rodada, uma carta mostra as condições, iguais para todos os jogadores: a distância de arremesso entre 6 e 10 m, em valores quebrados (por exemplo, 7,43 m), a moeda da rodada, tirada de um catálogo de moedas reais em seus tamanhos reais, e as áreas visíveis do chão e da parede (por exemplo, rachaduras, cascalho, pontos lisos ou chapas de metal), além da inclinação.
 
-**Controles.** Arraste para baixo para dar força, arraste para os lados para a direção, um controle deslizante para o arco; mouse e toque compartilham os mesmos limites de entrada normalizados. A soltura é mostrada em câmera lenta com uma mão de cinco dedos e o flip do polegar.
+**Física.** A moeda é um disco fino com dados de moedas reais, simulado com atrito, resistência ao rolamento e quique por superfície (asfalto, areia, mármore) e por material de parede. O modelo é calibrado fisicamente com base em medições publicadas; a calibração com arremessos reais filmados ainda está pendente, por isso ainda não falamos em física real. A simulação é determinística: a mesma entrada gera o mesmo resultado em qualquer dispositivo.
+
+**Controles.** Quatro estilos de arremesso: Deslizante (baixo e rasante), Meio arco, Balão alto e Tapa na parede, cada um com sua própria faixa de velocidade e de arco. Pressione e puxe para trás para definir força e direção, curve o gesto para dar efeito lateral e solte enquanto o anel de soltura se fecha; o timing e a mão firme decidem a qualidade da soltura. Mouse e toque usam a mesma entrada normalizada.
 
 **Justiça.** Nada que um jogador possa comprar muda massa, diâmetro, atrito, quique ou precisão. A raridade é visual. Esta é a regra fundadora do projeto e se aplica a todos os colecionáveis descritos aqui.
 
@@ -36,15 +38,15 @@ Os pontos da demo não têm valor em dinheiro. Nenhum NFT, token ou pagamento é
 ## 4. A Founder Collection
 
 - **Oferta:** 10.000 colecionáveis, numerados.
-- **Temas:** moedas Schallern (materiais, acabamentos, bordas, gravuras, pátina) e personagens no estilo das próprias figuras do jogo; temas de arena opcionais a partir de um catálogo de 48 paredes famosas.
+- **Temas:** moedas Schallern em oito categorias de atributos visíveis: nível, material, acabamento, borda, motivo (incluindo os personagens do jogo), inscrição, fundo (incluindo 48 paredes famosas) e efeito.
 - **Padrão:** Metaplex Core na Solana; cada colecionável é um ativo on-chain em uma coleção verificada com informação de royalties on-chain.
-- **Raridade:** um sistema de atributos (cerca de 8 a 12 categorias de atributos, 200 a 300 variantes) dá a cada peça seu próprio ranking de raridade de 1 a 10.000, além de cinco níveis de marketing e um pequeno número de especiais 1/1. A raridade é apenas prestígio.
-- **Revelação:** se os compradores escolhem seu nível sem revelação aleatória ou se a arte é revelada em um dia de revelação é uma decisão de produto em aberto; ela será publicada antes da abertura do mint.
-- **Direitos sobre a arte:** os holders recebem uma licença pessoal e não exclusiva sobre sua arte; a marca nominativa SCHALLERN permanece com a operadora. O texto final da licença será publicado com os termos do mint.
+- **Raridade:** 8 categorias de atributos com 129 valores; cada peça tem todas as categorias e seu próprio ranking de raridade. Níveis: 11 peças únicas (1/1), 89 Legendary, 500 Epic, 1.400 Rare, 3.000 Uncommon e 5.000 Common. A raridade é apenas prestígio visual.
+- **Atribuição aleatória e revelação:** os compradores não escolhem a arte, a raridade nem o nível. Até a coleção esgotar, todos os colecionáveis mostram a mesma imagem provisória. Antes da abertura do mint, um hash de proveniência da coleção completa e ordenada é publicado e gravado on-chain. Depois que a coleção esgota, o deslocamento inicial é tirado de um slot futuro da Solana anunciado com antecedência, de modo que ninguém, nem mesmo a equipe, consegue direcionar quem recebe qual peça. Qualquer pessoa pode conferir o resultado com o hash publicado.
+- **Direitos sobre a arte:** os holders podem usar comercialmente a arte do seu colecionável. A marca SCHALLERN (nome e logotipo) fica excluída e permanece com a operadora. O texto final da licença será publicado com os termos do mint.
 
 ## 5. O que um Founder recebe, e o que um Founder não recebe
 
-**Recebe:** o colecionável como skin de arremesso no jogo assim que a vinculação de carteira estiver ativa; um selo de Founder com o número do colecionável no perfil de jogador; o cargo de Founder e os canais de holders no Discord; um voto sobre quais arenas e designs de moeda vêm a seguir; acesso antecipado a novas arenas no modo de dinheiro fictício.
+**Recebe:** o colecionável como skin de arremesso no jogo assim que a vinculação de carteira estiver ativa; um selo de Founder com o número do colecionável no perfil de jogador; o cargo de Founder e os canais de holders no Discord; um voto sobre quais arenas e designs de moeda vêm a seguir; acesso antecipado a novas arenas no modo de dinheiro fictício; o direito de usar a arte comercialmente (exceto a marca SCHALLERN).
 
 **Não recebe:** uma participação na empresa, direito a lucros, distribuições, recompras ou valorização, nem qualquer vantagem de jogo. A Founder Collection é um colecionável, não um produto de investimento. Qualquer financiamento da empresa é uma oferta separada e estruturada à parte (veja a seção 10).
 
@@ -52,17 +54,19 @@ Os pontos da demo não têm valor em dinheiro. Nenhum NFT, token ou pagamento é
 
 | Item | Plano |
 |---|---|
-| Rede e padrão | Solana, Metaplex Core, Core Candy Machine com Candy Guard |
-| Níveis e preços | #1–4.000 a 0,5 SOL · #4.001–7.000 a 1 SOL · #7.001–9.000 a 1,5 SOL · #9.001–10.000 a 2 SOL (modelo planejado; as condições finais serão publicadas antes do início) |
-| Fases | equipe e OG → Allowlist (garantida, limitada por carteira) → sorteio da lista de espera → público; as datas são anunciadas somente em schallern.io e no canal de anúncios do Discord |
-| Limites | limites de mint por carteira por fase; taxa anti-bot; cada transação de mint é construída e coassinada pelo backend da Schallern após verificações de captcha e de frequência |
+| Rede e padrão | Solana, Metaplex Core, uma única Core Candy Machine com Candy Guard |
+| Faixas de preço | definidas pela quantidade vendida, não escolhidas pelo comprador: #1–4.000 a 0,5 SOL · #4.001–7.000 a 1 SOL · #7.001–9.000 a 1,5 SOL · #9.001–10.000 a 2 SOL. Quem compra antes paga menos; uma compra que atravessa uma faixa é cobrada por peça (modelo planejado; as condições finais serão publicadas antes do início) |
+| Atribuição | arte e raridade aleatórias para todos os 10.000 a partir de uma única Candy Machine, reveladas depois que a coleção esgotar (veja a seção 4) |
+| Fases | OG → Allowlist → público; a Allowlist dá acesso antecipado. As datas são anunciadas somente em schallern.io e nos canais oficiais do Discord e do Telegram |
+| Limites | sem limites por carteira em nenhuma fase; proteção anti-bot com captcha, verificações de frequência e taxa anti-bot; cada transação de mint é construída e coassinada pelo backend da Schallern |
 | Onde | somente em schallern.io; a equipe nunca envia a primeira mensagem e nunca pede frases-semente |
-| Tesouraria | os recursos do mint vão diretamente para uma tesouraria multiassinatura (2 de 3) |
+| Disponibilidade | o mint só tem restrição geográfica onde os termos dos nossos prestadores de serviço exigem |
+| Tesouraria | os recursos do mint são pagos on-chain diretamente na carteira de tesouraria da operadora |
 | Royalties | 5% de royalties no mercado secundário, gravados na coleção |
-| Armazenamento | arte e metadados na Arweave (permanente) |
-| Ensaio | o fluxo completo (coleção, quatro máquinas de nível com grupos de fase, provas de Allowlist, assinador no backend, testes de bot e de carga, upload na Arweave, atualização da revelação) foi executado e verificado na devnet da Solana em outubro de 2026 |
+| Armazenamento | arte e metadados na Arweave (permanente); a arte final é enviada na revelação |
+| Ensaio | o fluxo completo (coleção, uma única Candy Machine com imagem provisória e hash de proveniência on-chain, grupos de fase e de faixa de preço, assinador no backend, verificações geográficas e de sanções, testes de bot e de carga, revelação a partir de um slot da Solana, verificação pública) foi executado e verificado na devnet da Solana em outubro de 2026 |
 
-Os custos de mint para os compradores são o preço do nível mais as taxas de rede da Solana (cerca de 0,003 SOL por mint).
+Os custos de mint para os compradores são o preço da faixa vigente mais as taxas de rede da Solana (cerca de 0,003 SOL por mint).
 
 ## 7. Uso dos recursos
 
@@ -91,8 +95,8 @@ Operadora até a fundação da empresa do jogo: **Culturetek Pte. Ltd., 6 Raffle
 
 ## 12. Tecnologia
 
-- **Jogo:** 3D em tempo real com Three.js, física de moeda determinística própria, personagens com rig e animação facial, telemetria para balanceamento. Os resultados nos modos competitivos serão calculados no servidor.
-- **Stack do mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave via Irys, Helius RPC, um assinador de backend em Node, multisig Squads.
+- **Jogo:** 3D em tempo real com Three.js, física de moeda própria, determinística e calibrada fisicamente, personagens com rig e animação facial, telemetria para balanceamento. Os resultados nos modos competitivos serão calculados no servidor.
+- **Stack do mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, um assinador de backend em Node.
 - **Site:** schallern.io (inglês primeiro, alemão), páginas legais em schallern.io/legal.html.
 
 ## 13. Comunidade e recompensas
@@ -108,3 +112,4 @@ A Schallern está em desenvolvimento. A demo pode mudar, a coleção pode atrasa
 O arcabouço legal, os termos, a privacidade e os avisos são mantidos pela Culturetek Pte. Ltd. e publicados em https://schallern.io/legal.html. Este documento é informativo, não é uma oferta de venda de valores mobiliários nem aconselhamento de investimento. As versões deste whitepaper são publicadas com a sua data em schallern.io/whitepaper/ e no repositório público vinculado lá.
 
 - v0.1 · 16 de outubro de 2026 · primeiro rascunho de trabalho
+- v0.2 · 18 de outubro de 2026 · regras de jogo da demo V04 (não é preciso tocar a parede, única falta = por cima da parede, linha de contato de 2 m, carta da rodada, quatro estilos de arremesso), expressão "calibrado fisicamente", atribuição aleatória com raridades e revelação após a coleção esgotar, uma única Candy Machine, faixas de preço pela quantidade vendida, sem limites por carteira, sistema de atributos e quantidade por nível, uso comercial da arte, restrição geográfica
