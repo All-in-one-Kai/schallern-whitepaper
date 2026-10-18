@@ -57,11 +57,11 @@ Les points de la démo n’ont aucune valeur monétaire. Aucun NFT, token ou pai
 | Chaîne et standard | Solana, Metaplex Core, une seule Core Candy Machine avec Candy Guard |
 | Paliers de prix | fixés par le nombre de ventes, et non choisis par l’acheteur : #1–4 000 à 0,5 SOL · #4 001–7 000 à 1 SOL · #7 001–9 000 à 1,5 SOL · #9 001–10 000 à 2 SOL. Les premiers acheteurs paient moins ; un achat qui franchit un palier est facturé pièce par pièce (modèle prévu ; les conditions définitives sont publiées avant le lancement) |
 | Attribution | artwork et rareté aléatoires pour les 10 000 pièces depuis une seule Candy Machine, révélés une fois la collection épuisée (voir section 4) |
-| Phases | OG → Allowlist → public ; l’Allowlist donne un accès plus tôt. Les dates sont annoncées uniquement sur schallern.io et dans les canaux officiels Discord et Telegram |
+| Phases | lancement le **11 novembre 2026 à 11 h 11 SGT (03 h 11 UTC)** ; OG → Allowlist → public ; l’Allowlist donne un accès plus tôt. Les dates et tout changement sont annoncés uniquement sur schallern.io et dans les canaux officiels Discord et Telegram |
 | Limites | aucune limite par wallet, quelle que soit la phase ; protection anti-bot par captcha, contrôles de fréquence et taxe anti-bot ; chaque transaction de mint est construite et cosignée par le backend Schallern |
 | Où | uniquement sur schallern.io ; l’équipe n’écrit jamais en premier et ne demande jamais de seed phrase |
 | Disponibilité | le mint n’est restreint géographiquement que là où les conditions de nos prestataires l’exigent |
-| Trésorerie | les produits du mint sont versés on-chain directement sur le wallet de trésorerie de l’opérateur |
+| Trésorerie | les produits du mint sont versés on-chain dans un coffre multisig 2 sur 3 (Squads v4) de l’opérateur ; aucune clé ne peut à elle seule déplacer les fonds |
 | Royalties | 5 % de royalties sur le marché secondaire, inscrites dans la collection |
 | Stockage | artwork et métadonnées sur Arweave (permanent) ; l’artwork définitif est uploadé au reveal |
 | Répétition | le flux complet (collection, une seule Candy Machine avec visuel provisoire et hash de provenance on-chain, groupes de phases et de paliers de prix, signataire backend, contrôles géographiques et de sanctions, tests anti-bot et de charge, reveal à partir d’un slot Solana, vérification publique) a été exécuté et vérifié sur le devnet Solana en octobre 2026 |
@@ -79,7 +79,7 @@ Les produits financent la prochaine étape de développement de Schallern. L’a
 3. **Prévu :** matchs en ligne, crews de ville, tournois, comptes joueurs avec récompenses et tableaux de bord d’affiliation.
 4. **Vision :** figurines physiques personnelles, vrais murs, événements live.
 
-Les dates ne sont pas promises. Chaque étape est annoncée quand elle est prête.
+Hormis le lancement du Founder Mint (11 novembre 2026, 11 h 11 SGT), les dates ne sont pas promises. Chaque étape est annoncée quand elle est prête.
 
 ## 9. L’économie du jeu (mode argent réel prévu)
 
@@ -96,7 +96,7 @@ Opérateur jusqu’à la création de la société du jeu : **Culturetek Pte. L
 ## 12. Technologie
 
 - **Jeu :** 3D temps réel Three.js, physique de pièce sur mesure, déterministe et calibrée physiquement, personnages riggés avec animation faciale, télémétrie pour l’équilibrage. Les résultats des modes compétitifs seront calculés côté serveur.
-- **Stack de mint :** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, un signataire backend Node.
+- **Stack de mint :** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, un signataire backend Node, un coffre multisig Squads v4 pour les produits.
 - **Site web :** schallern.io (anglais d’abord, allemand), pages légales sur schallern.io/legal.html.
 
 ## 13. Communauté et récompenses

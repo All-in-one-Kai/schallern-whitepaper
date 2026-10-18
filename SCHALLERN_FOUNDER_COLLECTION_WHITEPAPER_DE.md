@@ -57,11 +57,11 @@ Demo-Punkte haben keinen Geldwert. Durch das Spielen der Demo entsteht kein NFT,
 | Chain und Standard | Solana, Metaplex Core, eine Core Candy Machine mit Candy Guard |
 | Preisstufen | nach verkaufter Stückzahl, nicht vom Käufer gewählt: #1–4.000 zu 0,5 SOL · #4.001–7.000 zu 1 SOL · #7.001–9.000 zu 1,5 SOL · #9.001–10.000 zu 2 SOL. Wer früh kauft, zahlt weniger; ein Kauf über eine Stufengrenze wird je Stück abgerechnet (geplantes Modell; endgültige Konditionen werden vor dem Start veröffentlicht) |
 | Zuteilung | zufälliges Artwork und zufällige Seltenheit für alle 10.000 aus einer Candy Machine, enthüllt nach dem Ausverkauf (siehe Abschnitt 4) |
-| Phasen | OG → Allowlist → öffentlich; die Allowlist bedeutet früheren Zugang. Termine nur auf schallern.io und in den offiziellen Discord- und Telegram-Kanälen |
+| Phasen | Start **11. November 2026, 11:11 Uhr SGT (03:11 UTC)**; OG → Allowlist → öffentlich; die Allowlist bedeutet früheren Zugang. Termine und Änderungen nur auf schallern.io und in den offiziellen Discord- und Telegram-Kanälen |
 | Grenzen | keine Limits je Wallet, in keiner Phase; Bot-Schutz durch Captcha, Rate-Prüfung und Bot-Tax; jede Mint-Transaktion wird vom Schallern-Backend gebaut und mitsigniert |
 | Wo | nur auf schallern.io; das Team schreibt nie zuerst und fragt nie nach Seed-Phrasen |
 | Verfügbarkeit | der Mint ist nur dort regional gesperrt, wo es die Bedingungen unserer Dienstleister verlangen |
-| Treasury | Mint-Erlöse gehen on-chain direkt an die Treasury-Wallet des Betreibers |
+| Treasury | Mint-Erlöse gehen on-chain in einen 2-von-3-Multisig-Tresor (Squads v4) des Betreibers; kein einzelner Schlüssel kann die Mittel bewegen |
 | Royalties | 5 % Sekundär-Royalty, in der Collection hinterlegt |
 | Speicher | Artwork und Metadaten auf Arweave (permanent); das endgültige Artwork wird beim Reveal hochgeladen |
 | Generalprobe | der komplette Ablauf (Collection, eine Candy Machine mit Platzhalter und On-Chain-Provenance-Hash, Gruppen für Phasen und Preisstufen, Backend-Signer, Geo- und Sanktionsprüfung, Bot- und Lasttests, Reveal aus einem Solana-Slot, öffentliche Prüfung) wurde im Oktober 2026 auf Solana Devnet durchgeführt und geprüft |
@@ -79,7 +79,7 @@ Die Erlöse finanzieren die nächste Entwicklungsstufe von Schallern. Die geplan
 3. **Geplant:** Online-Matches, Stadt-Crews, Turniere, Spielerkonten mit Rewards- und Affiliate-Dashboards.
 4. **Vision:** persönliche physische Figuren, echte Wände, Live-Events.
 
-Termine werden nicht versprochen. Jeder Schritt wird angekündigt, wenn er fertig ist.
+Abgesehen vom Start des Founder Mint (11. November 2026, 11:11 Uhr SGT) werden Termine nicht versprochen. Jeder Schritt wird angekündigt, wenn er fertig ist.
 
 ## 9. Die Spielökonomie (geplanter Echtgeldbetrieb)
 
@@ -96,7 +96,7 @@ Betreiber bis zur Gründung der Spielgesellschaft: **Culturetek Pte. Ltd., 6 Raf
 ## 12. Technik
 
 - **Spiel:** Three.js Echtzeit-3D, eigene deterministische, physikalisch kalibrierte Coin-Physik, geriggte Charaktere mit Mimik, Telemetrie fürs Balancing. Ergebnisse in Wettbewerbsmodi werden serverseitig berechnet.
-- **Mint-Stack:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, Node-Backend-Signer.
+- **Mint-Stack:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, Node-Backend-Signer, Squads-v4-Multisig-Tresor für die Erlöse.
 - **Website:** schallern.io (Englisch zuerst, Deutsch), Rechtliches unter schallern.io/legal.html.
 
 ## 13. Community und Belohnungen

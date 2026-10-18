@@ -57,11 +57,11 @@ Poin demo tidak bernilai tunai. Tidak ada NFT, token, atau pembayaran yang dibua
 | Chain dan standar | Solana, Metaplex Core, satu Core Candy Machine dengan Candy Guard |
 | Tahap harga | ditentukan oleh jumlah yang terjual, bukan dipilih pembeli: #1–4.000 seharga 0,5 SOL · #4.001–7.000 seharga 1 SOL · #7.001–9.000 seharga 1,5 SOL · #9.001–10.000 seharga 2 SOL. Pembeli awal membayar lebih murah; pembelian yang melewati batas tahap dihargai per karya (model terencana; ketentuan final dipublikasikan sebelum mulai) |
 | Pembagian | karya seni dan kelangkaan acak untuk seluruh 10.000 dari satu Candy Machine, diungkap setelah sold out (lihat bagian 4) |
-| Fase | OG → allowlist → publik; allowlist berarti akses lebih awal. Tanggal diumumkan hanya di schallern.io serta di kanal resmi Discord dan Telegram |
+| Fase | mulai **11 November 2026, 11.11 SGT (03.11 UTC)**; OG → allowlist → publik; allowlist berarti akses lebih awal. Tanggal dan perubahan apa pun diumumkan hanya di schallern.io serta di kanal resmi Discord dan Telegram |
 | Batas | tidak ada batas per dompet di fase mana pun; perlindungan bot lewat captcha, pemeriksaan laju, dan pajak bot; setiap transaksi mint dibangun dan ditandatangani bersama oleh backend Schallern |
 | Di mana | hanya di schallern.io; tim tidak pernah mengirim pesan lebih dulu dan tidak pernah meminta seed phrase |
 | Ketersediaan | mint dibatasi secara geografis hanya jika ketentuan penyedia layanan kami mewajibkannya |
-| Treasury | hasil mint dibayarkan on-chain langsung ke dompet treasury operator |
+| Treasury | hasil mint dibayarkan on-chain ke brankas multisig 2-dari-3 (Squads v4) milik operator; tidak ada satu kunci pun yang bisa memindahkan dana sendirian |
 | Royalti | royalti sekunder 5 %, tertulis di dalam koleksi |
 | Penyimpanan | karya seni dan metadata di Arweave (permanen); karya seni final diunggah saat reveal |
 | Gladi | alur lengkap (koleksi, satu Candy Machine dengan placeholder dan hash provenance on-chain, grup fase dan tahap harga, penanda tangan backend, pemeriksaan geo dan sanksi, uji bot dan beban, reveal dari slot Solana, verifikasi publik) telah dijalankan dan diverifikasi di Solana devnet pada Oktober 2026 |
@@ -79,7 +79,7 @@ Hasil mint mendanai tahap pengembangan Schallern berikutnya. Alokasi yang direnc
 3. **Direncanakan:** pertandingan online, kru kota, turnamen, akun pemain dengan reward dan dasbor afiliasi.
 4. **Visi:** figur fisik personal, tembok sungguhan, acara langsung.
 
-Tanggal tidak dijanjikan. Setiap langkah diumumkan saat sudah siap.
+Selain dimulainya Founder Mint (11 November 2026, 11.11 SGT), tanggal tidak dijanjikan. Setiap langkah diumumkan saat sudah siap.
 
 ## 9. Ekonomi game (mode uang asli yang direncanakan)
 
@@ -96,7 +96,7 @@ Operator sampai perusahaan game didirikan: **Culturetek Pte. Ltd., 6 Raffles Qua
 ## 12. Teknologi
 
 - **Game:** 3D real-time Three.js, fisika koin buatan sendiri yang deterministik dan dikalibrasi secara fisik, karakter ber-rig dengan animasi wajah, telemetri untuk penyeimbangan. Hasil dalam mode kompetitif akan dihitung di sisi server.
-- **Stack mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, penanda tangan backend Node.
+- **Stack mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, penanda tangan backend Node, brankas multisig Squads v4 untuk hasil mint.
 - **Situs web:** schallern.io (bahasa Inggris lebih dulu, Jerman), halaman legal di schallern.io/legal.html.
 
 ## 13. Komunitas dan reward

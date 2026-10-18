@@ -57,11 +57,11 @@ Schallern là game ném xu được hiệu chỉnh vật lý, chơi trên trình
 | Chain và tiêu chuẩn | Solana, Metaplex Core, một Core Candy Machine với Candy Guard |
 | Bậc giá | do số lượng đã bán quyết định, người mua không tự chọn: #1–4.000 ở 0,5 SOL · #4.001–7.000 ở 1 SOL · #7.001–9.000 ở 1,5 SOL · #9.001–10.000 ở 2 SOL. Người mua sớm trả ít hơn; giao dịch mua vượt qua một bậc được tính giá theo từng vật phẩm (mô hình dự kiến; điều khoản cuối cùng được công bố trước khi bắt đầu) |
 | Phân bổ | artwork và độ hiếm ngẫu nhiên cho cả 10.000 vật phẩm từ một Candy Machine, reveal sau khi bán hết (xem mục 4) |
-| Giai đoạn | OG → Allowlist → công khai; Allowlist nghĩa là được truy cập sớm hơn. Ngày chỉ được thông báo trên schallern.io và trong các kênh Discord và Telegram chính thức |
+| Giai đoạn | bắt đầu **11/11/2026, 11:11 SGT (03:11 UTC)**; OG → Allowlist → công khai; Allowlist nghĩa là được truy cập sớm hơn. Ngày và mọi thay đổi chỉ được thông báo trên schallern.io và trong các kênh Discord và Telegram chính thức |
 | Giới hạn | không giới hạn mỗi ví ở bất kỳ giai đoạn nào; chống bot bằng captcha, kiểm tra tần suất và thuế bot; mọi giao dịch mint được backend Schallern xây dựng và đồng ký |
 | Ở đâu | chỉ trên schallern.io; đội ngũ không bao giờ nhắn tin trước và không bao giờ hỏi seed phrase |
 | Khả dụng | đợt mint chỉ bị giới hạn theo khu vực địa lý ở những nơi điều khoản của các nhà cung cấp dịch vụ của chúng tôi yêu cầu |
-| Kho bạc | tiền thu từ mint được thanh toán on-chain thẳng vào ví kho bạc của đơn vị vận hành |
+| Kho bạc | tiền thu từ mint được thanh toán on-chain vào két multisig 2/3 (Squads v4) của đơn vị vận hành; không một khóa đơn lẻ nào có thể chuyển tiền |
 | Tiền bản quyền | 5 % tiền bản quyền thứ cấp, ghi vào bộ sưu tập |
 | Lưu trữ | artwork và metadata trên Arweave (vĩnh viễn); artwork cuối cùng được tải lên khi reveal |
 | Diễn tập | toàn bộ quy trình (bộ sưu tập, một Candy Machine với hình giữ chỗ và mã băm provenance on-chain, các nhóm theo giai đoạn và bậc giá, bộ ký backend, kiểm tra địa lý và lệnh trừng phạt, kiểm thử bot và tải, reveal từ một slot Solana, xác minh công khai) đã được chạy và xác minh trên Solana devnet vào tháng 10 năm 2026 |
@@ -79,7 +79,7 @@ Tiền thu được tài trợ cho giai đoạn phát triển tiếp theo của 
 3. **Dự kiến:** đấu online, băng nhóm thành phố, giải đấu, tài khoản người chơi với phần thưởng và bảng điều khiển affiliate.
 4. **Tầm nhìn:** mô hình vật lý cá nhân, tường thật, sự kiện trực tiếp.
 
-Ngày tháng không được cam kết. Mỗi bước được thông báo khi sẵn sàng.
+Ngoài thời điểm bắt đầu Founder Mint (11/11/2026, 11:11 SGT), ngày tháng không được cam kết. Mỗi bước được thông báo khi sẵn sàng.
 
 ## 9. Kinh tế game (chế độ tiền thật dự kiến)
 
@@ -96,7 +96,7 @@ Schallern cũng trao đổi với các nhà đầu tư cá nhân về việc tà
 ## 12. Công nghệ
 
 - **Game:** 3D thời gian thực Three.js, vật lý xu tự xây dựng, tất định và được hiệu chỉnh vật lý, nhân vật có khung xương với hoạt hình khuôn mặt, telemetry để cân bằng. Kết quả ở các chế độ thi đấu sẽ được tính phía máy chủ.
-- **Ngăn xếp mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, bộ ký backend Node.
+- **Ngăn xếp mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, bộ ký backend Node, két multisig Squads v4 cho tiền thu.
 - **Website:** schallern.io (tiếng Anh trước, tiếng Đức), trang pháp lý tại schallern.io/legal.html.
 
 ## 13. Cộng đồng và phần thưởng

@@ -57,11 +57,11 @@ Demo puanlarının nakit değeri yoktur. Demoyu oynayarak hiçbir NFT, token vey
 | Zincir ve standart | Solana, Metaplex Core, Candy Guard ile tek bir Core Candy Machine |
 | Fiyat basamakları | alıcı tarafından seçilmez, satılan adede göre belirlenir: #1–4.000: 0,5 SOL · #4.001–7.000: 1 SOL · #7.001–9.000: 1,5 SOL · #9.001–10.000: 2 SOL. Erken alıcılar daha az öder; bir basamağı aşan satın alma parça başına fiyatlandırılır (planlanan model; nihai şartlar başlangıçtan önce yayımlanır) |
 | Dağıtım | 10.000 parçanın tamamı için tek bir Candy Machine'den rastgele çizim ve nadirlik; tamamı satıldıktan sonra açıklanır (bkz. bölüm 4) |
-| Aşamalar | OG → Allowlist → herkese açık; Allowlist daha erken erişim demektir. Tarihler yalnızca schallern.io üzerinde ve resmî Discord ve Telegram kanallarında duyurulur |
+| Aşamalar | başlangıç **11 Kasım 2026, 11:11 SGT (03:11 UTC)**; OG → Allowlist → herkese açık; Allowlist daha erken erişim demektir. Tarihler ve değişiklikler yalnızca schallern.io üzerinde ve resmî Discord ve Telegram kanallarında duyurulur |
 | Sınırlar | hiçbir aşamada cüzdan başına sınır yok; captcha, hız kontrolleri ve bot vergisiyle bot koruması; her mint işlemi Schallern arka ucu tarafından oluşturulur ve ortak imzalanır |
 | Nerede | yalnızca schallern.io üzerinde; ekip asla önce yazmaz ve asla seed cümlesi sormaz |
 | Erişilebilirlik | mint, yalnızca hizmet sağlayıcılarımızın şartlarının gerektirdiği yerlerde coğrafi olarak kısıtlanır |
-| Hazine | mint geliri zincir üstünde doğrudan operatörün hazine cüzdanına ödenir |
+| Hazine | mint geliri zincir üstünde operatörün 3 anahtardan 2'siyle yönetilen multisig kasasına (Squads v4) ödenir; tek bir anahtar fonları hareket ettiremez |
 | Telifler | koleksiyona yazılmış %5 ikincil telif |
 | Depolama | çizimler ve meta veriler Arweave üzerinde (kalıcı); nihai çizimler reveal sırasında yüklenir |
 | Prova | tam akış (koleksiyon, yer tutucu ve zincir üstü provenance hash'li tek bir Candy Machine, aşama ve fiyat basamağı grupları, arka uç imzalayıcı, coğrafya ve yaptırım kontrolleri, bot ve yük testleri, bir Solana slot'undan reveal, herkese açık doğrulama) Ekim 2026'da Solana devnet üzerinde çalıştırıldı ve doğrulandı |
@@ -79,7 +79,7 @@ Gelir, Schallern'in bir sonraki geliştirme aşamasını finanse eder. Planlanan
 3. **Planlanan:** çevrimiçi maçlar, şehir ekipleri, turnuvalar, ödüllü oyuncu hesapları ve affiliate panelleri.
 4. **Vizyon:** kişisel fiziksel figürler, gerçek duvarlar, canlı etkinlikler.
 
-Tarihler vaat edilmez. Her adım hazır olduğunda duyurulur.
+Founder Mint başlangıcı (11 Kasım 2026, 11:11 SGT) dışında tarihler vaat edilmez. Her adım hazır olduğunda duyurulur.
 
 ## 9. Oyun ekonomisi (planlanan gerçek para modu)
 
@@ -96,7 +96,7 @@ Oyun şirketi kurulana kadar operatör: **Culturetek Pte. Ltd., 6 Raffles Quay, 
 ## 12. Teknoloji
 
 - **Oyun:** Three.js gerçek zamanlı 3D, özel, deterministik ve fiziksel olarak kalibre edilmiş para fiziği, yüz animasyonlu riglenmiş karakterler, dengeleme için telemetri. Rekabetçi modlardaki sonuçlar sunucu tarafında hesaplanacaktır.
-- **Mint yığını:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, bir Node arka uç imzalayıcı.
+- **Mint yığını:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, bir Node arka uç imzalayıcı, gelirler için bir Squads v4 multisig kasa.
 - **Web sitesi:** schallern.io (önce İngilizce, Almanca), yasal sayfalar schallern.io/legal.html adresinde.
 
 ## 13. Topluluk ve ödüller

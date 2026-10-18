@@ -57,11 +57,11 @@ Demo 积分没有现金价值。玩 Demo 不会生成任何 NFT、代币或付�
 | 链与标准 | Solana、Metaplex Core、一台带 Candy Guard 的 Core Candy Machine |
 | 价格阶梯 | 由已售数量决定，而非买家选择：#1–4,000 为 0.5 SOL · #4,001–7,000 为 1 SOL · #7,001–9,000 为 1.5 SOL · #9,001–10,000 为 2 SOL。越早购买价格越低；跨越阶梯的购买按每件分别计价（计划模型；最终条款在开始前公布） |
 | 分配 | 全部 10,000 件均由同一台 Candy Machine 随机分配作品和稀有度，售罄后揭晓（见第 4 节） |
-| 阶段 | OG → Allowlist → 公开发售；Allowlist 意味着更早参与。日期仅在 schallern.io 以及官方 Discord 和 Telegram 频道公布 |
+| 阶段 | **2026 年 11 月 11 日 11:11 SGT（03:11 UTC）**开始；OG → Allowlist → 公开发售；Allowlist 意味着更早参与。日期及任何变更仅在 schallern.io 以及官方 Discord 和 Telegram 频道公布 |
 | 限制 | 任何阶段都不设每钱包上限；通过验证码、频率检查和机器人税防范机器人；每笔 mint 交易都由 Schallern 后端构建并共同签名 |
 | 地点 | 仅在 schallern.io；团队绝不会主动私信，也绝不会索要助记词 |
 | 可用地区 | 仅在服务提供商条款要求时，mint 才设地区限制 |
-| 金库 | mint 收入在链上直接支付到运营方的金库钱包 |
+| 金库 | mint 收入在链上支付到运营方的 2/3 多签金库（Squads v4）；任何单一密钥都无法动用资金 |
 | 版税 | 5 % 二级市场版税，写入合集 |
 | 存储 | 作品和元数据存于 Arweave（永久）；最终作品在揭晓时上传 |
 | 演练 | 完整流程（合集、一台带占位图和链上来源哈希的 Candy Machine、阶段与价格阶梯分组、后端签名者、地区与制裁检查、机器人与负载测试、基于 Solana slot 的揭晓、公开验证）已于 2026 年 10 月在 Solana devnet 上运行并验证 |
@@ -79,7 +79,7 @@ Demo 积分没有现金价值。玩 Demo 不会生成任何 NFT、代币或付�
 3. **计划中：** 在线对战、城市战队、锦标赛、带奖励和联盟仪表盘的玩家账户。
 4. **愿景：** 个性化实体手办、真实的墙、线下活动。
 
-不承诺日期。每一步都在准备就绪时公布。
+除 Founder Mint 开始时间（2026 年 11 月 11 日 11:11 SGT）外，不承诺日期。每一步都在准备就绪时公布。
 
 ## 9. 游戏经济（计划中的真钱模式）
 
@@ -96,7 +96,7 @@ Schallern 也在与私人投资者洽谈公司融资（计划最低 20,000 欧�
 ## 12. 技术
 
 - **游戏：** Three.js 实时 3D、自研的确定性且经物理校准的硬币物理、带面部动画的绑定角色、用于平衡调校的遥测。竞技模式下的结果将在服务器端计算。
-- **Mint 技术栈：** Metaplex Core、Core Candy Machine、Umi SDK、Arweave、Helius RPC、Node 后端签名者。
+- **Mint 技术栈：** Metaplex Core、Core Candy Machine、Umi SDK、Arweave、Helius RPC、Node 后端签名者、用于收入的 Squads v4 多签金库。
 - **网站：** schallern.io（英文优先，另有德文），法律页面位于 schallern.io/legal.html。
 
 ## 13. 社区与奖励
