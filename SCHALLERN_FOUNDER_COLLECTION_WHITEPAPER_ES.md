@@ -57,7 +57,7 @@ Los puntos de la demo no tienen valor en efectivo. Jugar la demo no crea ningún
 | Cadena y estándar | Solana, Metaplex Core, una sola Core Candy Machine con Candy Guard |
 | Escalones de precio | los fija el número de piezas vendidas, no los elige el comprador: #1–4.000 a 0,5 SOL · #4.001–7.000 a 1 SOL · #7.001–9.000 a 1,5 SOL · #9.001–10.000 a 2 SOL. Quien compra antes paga menos; una compra que cruza un escalón se cobra pieza por pieza (modelo previsto; las condiciones definitivas se publican antes del inicio) |
 | Asignación | artwork y rareza aleatorios para las 10.000 piezas desde una sola Candy Machine, revelados cuando se agota la colección (ver sección 4) |
-| Fases | inicio el **11 de noviembre de 2026, 11:11 SGT (03:11 UTC)**; OG → Allowlist → público; la Allowlist da acceso antes. Las fechas y cualquier cambio se anuncian solo en schallern.io y en los canales oficiales de Discord y Telegram |
+| Fases | inicio el **11 de noviembre de 2026, 11:11 CET Berlin (10:11 UTC)**; OG → Allowlist → público; la Allowlist da acceso antes. Las fechas y cualquier cambio se anuncian solo en schallern.io y en los canales oficiales de Discord y Telegram |
 | Límites | sin límites por wallet en ninguna fase; protección antibots mediante captcha, comprobaciones de frecuencia e impuesto antibots; cada transacción de mint la construye y cofirma el backend de Schallern |
 | Dónde | solo en schallern.io; el equipo nunca escribe primero y nunca pide frases semilla |
 | Disponibilidad | el mint solo tiene restricciones geográficas donde lo exigen las condiciones de nuestros proveedores de servicios |
@@ -79,7 +79,7 @@ Los fondos financian la siguiente etapa de desarrollo de Schallern. La asignaci�
 3. **Previsto:** partidas online, crews de ciudad, torneos, cuentas de jugador con recompensas y paneles de afiliados.
 4. **Visión:** figuras físicas personales, paredes reales, eventos en vivo.
 
-Salvo el inicio del Founder Mint (11 de noviembre de 2026, 11:11 SGT), no se prometen fechas. Cada paso se anuncia cuando está listo.
+Salvo el inicio del Founder Mint (11 de noviembre de 2026, 11:11 CET Berlin), no se prometen fechas. Cada paso se anuncia cuando está listo.
 
 ## 9. La economía del juego (modo de dinero real previsto)
 

@@ -57,7 +57,7 @@ Demo points have no cash value. No NFT, token or payment is created by playing t
 | Chain and standard | Solana, Metaplex Core, one Core Candy Machine with Candy Guard |
 | Price steps | set by the number sold, not chosen by the buyer: #1–4,000 at 0.5 SOL · #4,001–7,000 at 1 SOL · #7,001–9,000 at 1.5 SOL · #9,001–10,000 at 2 SOL. Early buyers pay less; a purchase that crosses a step is priced per piece (planned model; final terms are published before the start) |
 | Assignment | random artwork and rarity for all 10,000 from one Candy Machine, revealed after sell-out (see section 4) |
-| Phases | start **11 November 2026, 11:11 SGT (03:11 UTC)**; OG → allowlist → public; the allowlist means earlier access. Dates and any changes are announced only on schallern.io and in the official Discord and Telegram channels |
+| Phases | start **11 November 2026, 11:11 CET Berlin (10:11 UTC)**; OG → allowlist → public; the allowlist means earlier access. Dates and any changes are announced only on schallern.io and in the official Discord and Telegram channels |
 | Limits | no per-wallet limits in any phase; bot protection through captcha, rate checks and bot tax; every mint transaction is built and co-signed by the Schallern backend |
 | Where | only on schallern.io; the team never messages first and never asks for seed phrases |
 | Availability | the mint is geo-restricted only where the terms of our service providers require it |
@@ -79,7 +79,7 @@ Proceeds finance the next development stage of Schallern. The planned allocation
 3. **Planned:** online matches, city crews, tournaments, player accounts with rewards and affiliate dashboards.
 4. **Vision:** personal physical figures, real walls, live events.
 
-Apart from the Founder Mint start (11 November 2026, 11:11 SGT), dates are not promised. Every step is announced when it is ready.
+Apart from the Founder Mint start (11 November 2026, 11:11 CET Berlin), dates are not promised. Every step is announced when it is ready.
 
 ## 9. The game economy (planned real-money mode)
 

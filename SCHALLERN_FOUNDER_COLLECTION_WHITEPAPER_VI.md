@@ -57,7 +57,7 @@ Schallern là game ném xu được hiệu chỉnh vật lý, chơi trên trình
 | Chain và tiêu chuẩn | Solana, Metaplex Core, một Core Candy Machine với Candy Guard |
 | Bậc giá | do số lượng đã bán quyết định, người mua không tự chọn: #1–4.000 ở 0,5 SOL · #4.001–7.000 ở 1 SOL · #7.001–9.000 ở 1,5 SOL · #9.001–10.000 ở 2 SOL. Người mua sớm trả ít hơn; giao dịch mua vượt qua một bậc được tính giá theo từng vật phẩm (mô hình dự kiến; điều khoản cuối cùng được công bố trước khi bắt đầu) |
 | Phân bổ | artwork và độ hiếm ngẫu nhiên cho cả 10.000 vật phẩm từ một Candy Machine, reveal sau khi bán hết (xem mục 4) |
-| Giai đoạn | bắt đầu **11/11/2026, 11:11 SGT (03:11 UTC)**; OG → Allowlist → công khai; Allowlist nghĩa là được truy cập sớm hơn. Ngày và mọi thay đổi chỉ được thông báo trên schallern.io và trong các kênh Discord và Telegram chính thức |
+| Giai đoạn | bắt đầu **11/11/2026, 11:11 CET Berlin (10:11 UTC)**; OG → Allowlist → công khai; Allowlist nghĩa là được truy cập sớm hơn. Ngày và mọi thay đổi chỉ được thông báo trên schallern.io và trong các kênh Discord và Telegram chính thức |
 | Giới hạn | không giới hạn mỗi ví ở bất kỳ giai đoạn nào; chống bot bằng captcha, kiểm tra tần suất và thuế bot; mọi giao dịch mint được backend Schallern xây dựng và đồng ký |
 | Ở đâu | chỉ trên schallern.io; đội ngũ không bao giờ nhắn tin trước và không bao giờ hỏi seed phrase |
 | Khả dụng | đợt mint chỉ bị giới hạn theo khu vực địa lý ở những nơi điều khoản của các nhà cung cấp dịch vụ của chúng tôi yêu cầu |
@@ -79,7 +79,7 @@ Tiền thu được tài trợ cho giai đoạn phát triển tiếp theo của 
 3. **Dự kiến:** đấu online, băng nhóm thành phố, giải đấu, tài khoản người chơi với phần thưởng và bảng điều khiển affiliate.
 4. **Tầm nhìn:** mô hình vật lý cá nhân, tường thật, sự kiện trực tiếp.
 
-Ngoài thời điểm bắt đầu Founder Mint (11/11/2026, 11:11 SGT), ngày tháng không được cam kết. Mỗi bước được thông báo khi sẵn sàng.
+Ngoài thời điểm bắt đầu Founder Mint (11/11/2026, 11:11 CET Berlin), ngày tháng không được cam kết. Mỗi bước được thông báo khi sẵn sàng.
 
 ## 9. Kinh tế game (chế độ tiền thật dự kiến)
 

@@ -57,7 +57,7 @@ Demo puanlarının nakit değeri yoktur. Demoyu oynayarak hiçbir NFT, token vey
 | Zincir ve standart | Solana, Metaplex Core, Candy Guard ile tek bir Core Candy Machine |
 | Fiyat basamakları | alıcı tarafından seçilmez, satılan adede göre belirlenir: #1–4.000: 0,5 SOL · #4.001–7.000: 1 SOL · #7.001–9.000: 1,5 SOL · #9.001–10.000: 2 SOL. Erken alıcılar daha az öder; bir basamağı aşan satın alma parça başına fiyatlandırılır (planlanan model; nihai şartlar başlangıçtan önce yayımlanır) |
 | Dağıtım | 10.000 parçanın tamamı için tek bir Candy Machine'den rastgele çizim ve nadirlik; tamamı satıldıktan sonra açıklanır (bkz. bölüm 4) |
-| Aşamalar | başlangıç **11 Kasım 2026, 11:11 SGT (03:11 UTC)**; OG → Allowlist → herkese açık; Allowlist daha erken erişim demektir. Tarihler ve değişiklikler yalnızca schallern.io üzerinde ve resmî Discord ve Telegram kanallarında duyurulur |
+| Aşamalar | başlangıç **11 Kasım 2026, 11:11 CET Berlin (10:11 UTC)**; OG → Allowlist → herkese açık; Allowlist daha erken erişim demektir. Tarihler ve değişiklikler yalnızca schallern.io üzerinde ve resmî Discord ve Telegram kanallarında duyurulur |
 | Sınırlar | hiçbir aşamada cüzdan başına sınır yok; captcha, hız kontrolleri ve bot vergisiyle bot koruması; her mint işlemi Schallern arka ucu tarafından oluşturulur ve ortak imzalanır |
 | Nerede | yalnızca schallern.io üzerinde; ekip asla önce yazmaz ve asla seed cümlesi sormaz |
 | Erişilebilirlik | mint, yalnızca hizmet sağlayıcılarımızın şartlarının gerektirdiği yerlerde coğrafi olarak kısıtlanır |
@@ -79,7 +79,7 @@ Gelir, Schallern'in bir sonraki geliştirme aşamasını finanse eder. Planlanan
 3. **Planlanan:** çevrimiçi maçlar, şehir ekipleri, turnuvalar, ödüllü oyuncu hesapları ve affiliate panelleri.
 4. **Vizyon:** kişisel fiziksel figürler, gerçek duvarlar, canlı etkinlikler.
 
-Founder Mint başlangıcı (11 Kasım 2026, 11:11 SGT) dışında tarihler vaat edilmez. Her adım hazır olduğunda duyurulur.
+Founder Mint başlangıcı (11 Kasım 2026, 11:11 CET Berlin) dışında tarihler vaat edilmez. Her adım hazır olduğunda duyurulur.
 
 ## 9. Oyun ekonomisi (planlanan gerçek para modu)
 

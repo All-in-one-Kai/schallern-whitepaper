@@ -57,7 +57,7 @@ Demo-Punkte haben keinen Geldwert. Durch das Spielen der Demo entsteht kein NFT,
 | Chain und Standard | Solana, Metaplex Core, eine Core Candy Machine mit Candy Guard |
 | Preisstufen | nach verkaufter Stückzahl, nicht vom Käufer gewählt: #1–4.000 zu 0,5 SOL · #4.001–7.000 zu 1 SOL · #7.001–9.000 zu 1,5 SOL · #9.001–10.000 zu 2 SOL. Wer früh kauft, zahlt weniger; ein Kauf über eine Stufengrenze wird je Stück abgerechnet (geplantes Modell; endgültige Konditionen werden vor dem Start veröffentlicht) |
 | Zuteilung | zufälliges Artwork und zufällige Seltenheit für alle 10.000 aus einer Candy Machine, enthüllt nach dem Ausverkauf (siehe Abschnitt 4) |
-| Phasen | Start **11. November 2026, 11:11 Uhr SGT (03:11 UTC)**; OG → Allowlist → öffentlich; die Allowlist bedeutet früheren Zugang. Termine und Änderungen nur auf schallern.io und in den offiziellen Discord- und Telegram-Kanälen |
+| Phasen | Start **11. November 2026, 11:11 Uhr Berliner Zeit (MEZ, 10:11 UTC)**; OG → Allowlist → öffentlich; die Allowlist bedeutet früheren Zugang. Termine und Änderungen nur auf schallern.io und in den offiziellen Discord- und Telegram-Kanälen |
 | Grenzen | keine Limits je Wallet, in keiner Phase; Bot-Schutz durch Captcha, Rate-Prüfung und Bot-Tax; jede Mint-Transaktion wird vom Schallern-Backend gebaut und mitsigniert |
 | Wo | nur auf schallern.io; das Team schreibt nie zuerst und fragt nie nach Seed-Phrasen |
 | Verfügbarkeit | der Mint ist nur dort regional gesperrt, wo es die Bedingungen unserer Dienstleister verlangen |
@@ -79,7 +79,7 @@ Die Erlöse finanzieren die nächste Entwicklungsstufe von Schallern. Die geplan
 3. **Geplant:** Online-Matches, Stadt-Crews, Turniere, Spielerkonten mit Rewards- und Affiliate-Dashboards.
 4. **Vision:** persönliche physische Figuren, echte Wände, Live-Events.
 
-Abgesehen vom Start des Founder Mint (11. November 2026, 11:11 Uhr SGT) werden Termine nicht versprochen. Jeder Schritt wird angekündigt, wenn er fertig ist.
+Abgesehen vom Start des Founder Mint (11. November 2026, 11:11 Uhr Berliner Zeit) werden Termine nicht versprochen. Jeder Schritt wird angekündigt, wenn er fertig ist.
 
 ## 9. Die Spielökonomie (geplanter Echtgeldbetrieb)
 
