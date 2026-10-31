@@ -41,7 +41,7 @@ Poin demo tidak bernilai tunai. Tidak ada NFT, token, atau pembayaran yang dibua
 - **Subjek:** koin Schallern dalam delapan kategori trait yang terlihat: tingkat, material, finishing, tepi, motif (termasuk karakter game), inskripsi, latar (termasuk 48 tembok terkenal), dan efek.
 - **Standar:** Metaplex Core di Solana; setiap collectible adalah satu aset on-chain dalam koleksi terverifikasi dengan informasi royalti on-chain.
 - **Kelangkaan:** 8 kategori trait dengan 129 nilai; setiap karya memiliki semua kategori dan peringkat kelangkaannya sendiri. Tingkat: 11 karya satu-satunya (1/1), 89 Legendary, 500 Epic, 1.400 Rare, 3.000 Uncommon, dan 5.000 Common. Kelangkaan hanya soal prestise visual.
-- **Pembagian acak dan reveal:** pembeli tidak memilih karya seni, kelangkaan, atau tingkat. Sampai sold out, setiap collectible menampilkan placeholder yang sama. Sebelum mint dibuka, hash provenance dari seluruh koleksi dalam urutan finalnya dipublikasikan dan disimpan on-chain. Setelah sold out, offset awal diambil dari slot Solana di masa depan yang sudah diumumkan sebelumnya, sehingga tidak ada seorang pun, termasuk tim, yang bisa mengatur siapa mendapat karya yang mana. Siapa pun dapat mencocokkan hasilnya dengan hash yang dipublikasikan.
+- **Pembagian acak dan reveal:** pembeli tidak memilih karya seni, kelangkaan, atau tingkat. Sampai reveal, setiap collectible menampilkan placeholder yang sama. Sebelum mint dibuka, hash provenance dari seluruh koleksi dalam urutan finalnya dipublikasikan dan disimpan on-chain. Setelah sold out atau, jika koleksi belum habis sampai saat itu, saat mint berakhir pada 31 Januari 2027, offset awal diambil dari slot Solana di masa depan yang sudah diumumkan sebelumnya, sehingga tidak ada seorang pun, termasuk tim, yang bisa mengatur siapa mendapat karya yang mana. Siapa pun dapat mencocokkan hasilnya dengan hash yang dipublikasikan.
 - **Hak karya seni:** holder boleh menggunakan karya seni collectible mereka secara komersial. Merek SCHALLERN (nama dan logo) dikecualikan dan tetap milik operator. Teks lisensi final dipublikasikan bersama ketentuan mint.
 
 ## 5. Apa yang didapat seorang founder, dan apa yang tidak
@@ -56,8 +56,8 @@ Poin demo tidak bernilai tunai. Tidak ada NFT, token, atau pembayaran yang dibua
 |---|---|
 | Chain dan standar | Solana, Metaplex Core, satu Core Candy Machine dengan Candy Guard |
 | Tahap harga | ditentukan oleh jumlah yang terjual, bukan dipilih pembeli: #1–4.000 seharga 0,5 SOL · #4.001–7.000 seharga 1 SOL · #7.001–9.000 seharga 1,5 SOL · #9.001–10.000 seharga 2 SOL. Pembeli awal membayar lebih murah; pembelian yang melewati batas tahap dihargai per karya (model terencana; ketentuan final dipublikasikan sebelum mulai) |
-| Pembagian | karya seni dan kelangkaan acak untuk seluruh 10.000 dari satu Candy Machine, diungkap setelah sold out (lihat bagian 4) |
-| Fase | mulai **11 November 2026, 11.11 CET Berlin (10.11 UTC)**; OG → allowlist → publik; allowlist berarti akses lebih awal. Tanggal dan perubahan apa pun diumumkan hanya di schallern.io serta di kanal resmi Discord dan Telegram |
+| Pembagian | karya seni dan kelangkaan acak untuk seluruh 10.000 dari satu Candy Machine, diungkap setelah sold out atau saat mint berakhir (31 Januari 2027, lihat bagian 4) |
+| Fase | OG **11 November 2026, 11.11 CET Berlin (10.11 UTC)** → allowlist di hari yang sama, **13.11 CET Berlin (12.11 UTC)** → publik **12 November 2026, 13.11 CET Berlin (12.11 UTC)**; allowlist berarti akses lebih awal. Mint berakhir **31 Januari 2027, 23.59 CET Berlin (22.59 UTC)**; setelah itu tidak ada koin yang bisa di-mint. Tanggal dan perubahan apa pun diumumkan hanya di schallern.io serta di kanal resmi Discord dan Telegram |
 | Batas | tidak ada batas per dompet di fase mana pun; perlindungan bot lewat captcha, pemeriksaan laju, dan pajak bot; setiap transaksi mint dibangun dan ditandatangani bersama oleh backend Schallern |
 | Di mana | hanya di schallern.io; tim tidak pernah mengirim pesan lebih dulu dan tidak pernah meminta seed phrase |
 | Ketersediaan | mint dibatasi secara geografis hanya jika ketentuan penyedia layanan kami mewajibkannya |
@@ -79,7 +79,7 @@ Hasil mint mendanai tahap pengembangan Schallern berikutnya. Alokasi yang direnc
 3. **Direncanakan:** pertandingan online, kru kota, turnamen, akun pemain dengan reward dan dasbor afiliasi.
 4. **Visi:** figur fisik personal, tembok sungguhan, acara langsung.
 
-Selain dimulainya Founder Mint (11 November 2026, 11.11 CET Berlin), tanggal tidak dijanjikan. Setiap langkah diumumkan saat sudah siap.
+Selain dimulainya Founder Mint (11 November 2026, 11.11 CET Berlin) dan berakhirnya mint (31 Januari 2027, 23.59 CET Berlin), tanggal tidak dijanjikan. Setiap langkah diumumkan saat sudah siap.
 
 ## 9. Ekonomi game (mode uang asli yang direncanakan)
 
@@ -112,4 +112,4 @@ Schallern sedang dikembangkan. Demo dapat berubah, koleksi dapat tertunda, jarin
 Kerangka hukum, ketentuan, privasi, dan disclaimer dikelola oleh Culturetek Pte. Ltd. dan dipublikasikan di https://schallern.io/legal.html. Dokumen ini bersifat informatif, bukan penawaran penjualan sekuritas, dan bukan nasihat investasi. Versi whitepaper ini dipublikasikan beserta tanggalnya di schallern.io/whitepaper/ dan di repositori publik yang ditautkan di sana.
 
 - v0.1 · 16 Oktober 2026 · draf kerja pertama
-- v0.2 · 18 Oktober 2026 · aturan game demo V04 (tidak wajib menyentuh tembok, satu-satunya pelanggaran = melewati tembok, garis pendaratan 2 m, kartu ronde, empat gaya lempar), istilah “dikalibrasi secara fisik”, pembagian acak dengan kelangkaan dan reveal setelah sold out, satu Candy Machine, tahap harga berdasarkan jumlah terjual, tanpa batas per dompet, sistem trait dan jumlah per tingkat, penggunaan komersial karya seni, pembatasan geografis
+- v0.2 · 18 Oktober 2026 · aturan game demo V04 (tidak wajib menyentuh tembok, satu-satunya pelanggaran = melewati tembok, garis pendaratan 2 m, kartu ronde, empat gaya lempar), istilah “dikalibrasi secara fisik”, pembagian acak dengan kelangkaan dan reveal setelah sold out atau saat mint berakhir, satu Candy Machine, tahap harga berdasarkan jumlah terjual, tanpa batas per dompet, sistem trait dan jumlah per tingkat, penggunaan komersial karya seni, pembatasan geografis

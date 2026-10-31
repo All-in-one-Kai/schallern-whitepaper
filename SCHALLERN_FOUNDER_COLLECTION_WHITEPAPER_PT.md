@@ -41,7 +41,7 @@ Os pontos da demo não têm valor em dinheiro. Nenhum NFT, token ou pagamento é
 - **Temas:** moedas Schallern em oito categorias de atributos visíveis: nível, material, acabamento, borda, motivo (incluindo os personagens do jogo), inscrição, fundo (incluindo 48 paredes famosas) e efeito.
 - **Padrão:** Metaplex Core na Solana; cada colecionável é um ativo on-chain em uma coleção verificada com informação de royalties on-chain.
 - **Raridade:** 8 categorias de atributos com 129 valores; cada peça tem todas as categorias e seu próprio ranking de raridade. Níveis: 11 peças únicas (1/1), 89 Legendary, 500 Epic, 1.400 Rare, 3.000 Uncommon e 5.000 Common. A raridade é apenas prestígio visual.
-- **Atribuição aleatória e revelação:** os compradores não escolhem a arte, a raridade nem o nível. Até a coleção esgotar, todos os colecionáveis mostram a mesma imagem provisória. Antes da abertura do mint, um hash de proveniência da coleção completa e ordenada é publicado e gravado on-chain. Depois que a coleção esgota, o deslocamento inicial é tirado de um slot futuro da Solana anunciado com antecedência, de modo que ninguém, nem mesmo a equipe, consegue direcionar quem recebe qual peça. Qualquer pessoa pode conferir o resultado com o hash publicado.
+- **Atribuição aleatória e revelação:** os compradores não escolhem a arte, a raridade nem o nível. Até a revelação, todos os colecionáveis mostram a mesma imagem provisória. Antes da abertura do mint, um hash de proveniência da coleção completa e ordenada é publicado e gravado on-chain. Depois que a coleção esgota ou, se não tiver esgotado até lá, no fim do mint em 31 de janeiro de 2027, o deslocamento inicial é tirado de um slot futuro da Solana anunciado com antecedência, de modo que ninguém, nem mesmo a equipe, consegue direcionar quem recebe qual peça. Qualquer pessoa pode conferir o resultado com o hash publicado.
 - **Direitos sobre a arte:** os holders podem usar comercialmente a arte do seu colecionável. A marca SCHALLERN (nome e logotipo) fica excluída e permanece com a operadora. O texto final da licença será publicado com os termos do mint.
 
 ## 5. O que um Founder recebe, e o que um Founder não recebe
@@ -56,8 +56,8 @@ Os pontos da demo não têm valor em dinheiro. Nenhum NFT, token ou pagamento é
 |---|---|
 | Rede e padrão | Solana, Metaplex Core, uma única Core Candy Machine com Candy Guard |
 | Faixas de preço | definidas pela quantidade vendida, não escolhidas pelo comprador: #1–4.000 a 0,5 SOL · #4.001–7.000 a 1 SOL · #7.001–9.000 a 1,5 SOL · #9.001–10.000 a 2 SOL. Quem compra antes paga menos; uma compra que atravessa uma faixa é cobrada por peça (modelo planejado; as condições finais serão publicadas antes do início) |
-| Atribuição | arte e raridade aleatórias para todos os 10.000 a partir de uma única Candy Machine, reveladas depois que a coleção esgotar (veja a seção 4) |
-| Fases | início em **11 de novembro de 2026, 11:11 CET Berlin (10:11 UTC)**; OG → Allowlist → público; a Allowlist dá acesso antecipado. As datas e eventuais mudanças são anunciadas somente em schallern.io e nos canais oficiais do Discord e do Telegram |
+| Atribuição | arte e raridade aleatórias para todos os 10.000 a partir de uma única Candy Machine, reveladas depois que a coleção esgotar ou no fim do mint (31 de janeiro de 2027, veja a seção 4) |
+| Fases | OG **11 de novembro de 2026, 11:11 CET Berlin (10:11 UTC)** → Allowlist no mesmo dia, **13:11 CET Berlin (12:11 UTC)** → público **12 de novembro de 2026, 13:11 CET Berlin (12:11 UTC)**; a Allowlist dá acesso antecipado. O mint termina em **31 de janeiro de 2027, 23:59 CET Berlin (22:59 UTC)**; depois disso, nenhuma moeda pode ser mintada. As datas e eventuais mudanças são anunciadas somente em schallern.io e nos canais oficiais do Discord e do Telegram |
 | Limites | sem limites por carteira em nenhuma fase; proteção anti-bot com captcha, verificações de frequência e taxa anti-bot; cada transação de mint é construída e coassinada pelo backend da Schallern |
 | Onde | somente em schallern.io; a equipe nunca envia a primeira mensagem e nunca pede frases-semente |
 | Disponibilidade | o mint só tem restrição geográfica onde os termos dos nossos prestadores de serviço exigem |
@@ -79,7 +79,7 @@ Os recursos financiam a próxima etapa de desenvolvimento da Schallern. A aloca�
 3. **Planejado:** partidas online, turmas de cidade, torneios, contas de jogador com painéis de recompensas e afiliados.
 4. **Visão:** figuras físicas pessoais, paredes reais, eventos ao vivo.
 
-Exceto o início do Founder Mint (11 de novembro de 2026, 11:11 CET Berlin), datas não são prometidas. Cada etapa é anunciada quando está pronta.
+Exceto o início do Founder Mint (11 de novembro de 2026, 11:11 CET Berlin) e o fim do mint (31 de janeiro de 2027, 23:59 CET Berlin), datas não são prometidas. Cada etapa é anunciada quando está pronta.
 
 ## 9. A economia do jogo (modo com dinheiro real planejado)
 
@@ -112,4 +112,4 @@ A Schallern está em desenvolvimento. A demo pode mudar, a coleção pode atrasa
 O arcabouço legal, os termos, a privacidade e os avisos são mantidos pela Culturetek Pte. Ltd. e publicados em https://schallern.io/legal.html. Este documento é informativo, não é uma oferta de venda de valores mobiliários nem aconselhamento de investimento. As versões deste whitepaper são publicadas com a sua data em schallern.io/whitepaper/ e no repositório público vinculado lá.
 
 - v0.1 · 16 de outubro de 2026 · primeiro rascunho de trabalho
-- v0.2 · 18 de outubro de 2026 · regras de jogo da demo V04 (não é preciso tocar a parede, única falta = por cima da parede, linha de contato de 2 m, carta da rodada, quatro estilos de arremesso), expressão "calibrado fisicamente", atribuição aleatória com raridades e revelação após a coleção esgotar, uma única Candy Machine, faixas de preço pela quantidade vendida, sem limites por carteira, sistema de atributos e quantidade por nível, uso comercial da arte, restrição geográfica
+- v0.2 · 18 de outubro de 2026 · regras de jogo da demo V04 (não é preciso tocar a parede, única falta = por cima da parede, linha de contato de 2 m, carta da rodada, quatro estilos de arremesso), expressão "calibrado fisicamente", atribuição aleatória com raridades e revelação após a coleção esgotar ou no fim do mint, uma única Candy Machine, faixas de preço pela quantidade vendida, sem limites por carteira, sistema de atributos e quantidade por nível, uso comercial da arte, restrição geográfica

@@ -41,7 +41,7 @@ Demo points have no cash value. No NFT, token or payment is created by playing t
 - **Subjects:** Schallern coins in eight visible trait categories: tier, material, finish, edge, motif (including the game's characters), inscription, backdrop (including 48 famous walls) and effect.
 - **Standard:** Metaplex Core on Solana; each collectible is one on-chain asset in a verified collection with on-chain royalty information.
 - **Rarity:** 8 trait categories with 129 values; every piece has every category and its own rarity rank. Tiers: 11 one-of-one pieces (1/1), 89 Legendary, 500 Epic, 1,400 Rare, 3,000 Uncommon and 5,000 Common. Rarity is visual prestige only.
-- **Random assignment and reveal:** buyers do not choose artwork, rarity or tier. Until sell-out every collectible shows the same placeholder. Before the mint opens, a provenance hash of the complete, ordered collection is published and stored on-chain. After sell-out the starting offset is taken from a pre-announced future Solana slot, so nobody, not even the team, can steer who gets which piece. Anyone can check the result against the published hash.
+- **Random assignment and reveal:** buyers do not choose artwork, rarity or tier. Until the reveal every collectible shows the same placeholder. Before the mint opens, a provenance hash of the complete, ordered collection is published and stored on-chain. After sell-out, or at mint end on 31 January 2027 if the collection has not sold out by then, the starting offset is taken from a pre-announced future Solana slot, so nobody, not even the team, can steer who gets which piece. Anyone can check the result against the published hash.
 - **Artwork rights:** holders may use the artwork of their collectible commercially. The SCHALLERN brand (name and logo) is excluded and stays with the operator. The final licence text is published with the mint terms.
 
 ## 5. What a founder gets, and what a founder does not get
@@ -56,8 +56,8 @@ Demo points have no cash value. No NFT, token or payment is created by playing t
 |---|---|
 | Chain and standard | Solana, Metaplex Core, one Core Candy Machine with Candy Guard |
 | Price steps | set by the number sold, not chosen by the buyer: #1–4,000 at 0.5 SOL · #4,001–7,000 at 1 SOL · #7,001–9,000 at 1.5 SOL · #9,001–10,000 at 2 SOL. Early buyers pay less; a purchase that crosses a step is priced per piece (planned model; final terms are published before the start) |
-| Assignment | random artwork and rarity for all 10,000 from one Candy Machine, revealed after sell-out (see section 4) |
-| Phases | start **11 November 2026, 11:11 CET Berlin (10:11 UTC)**; OG → allowlist → public; the allowlist means earlier access. Dates and any changes are announced only on schallern.io and in the official Discord and Telegram channels |
+| Assignment | random artwork and rarity for all 10,000 from one Candy Machine, revealed after sell-out or at mint end (31 January 2027, see section 4) |
+| Phases | OG **11 November 2026, 11:11 CET Berlin (10:11 UTC)** → allowlist same day, **13:11 CET Berlin (12:11 UTC)** → public **12 November 2026, 13:11 CET Berlin (12:11 UTC)**; the allowlist means earlier access. The mint ends on **31 January 2027, 23:59 CET Berlin (22:59 UTC)**; no coins can be minted after that. Dates and any changes are announced only on schallern.io and in the official Discord and Telegram channels |
 | Limits | no per-wallet limits in any phase; bot protection through captcha, rate checks and bot tax; every mint transaction is built and co-signed by the Schallern backend |
 | Where | only on schallern.io; the team never messages first and never asks for seed phrases |
 | Availability | the mint is geo-restricted only where the terms of our service providers require it |
@@ -79,7 +79,7 @@ Proceeds finance the next development stage of Schallern. The planned allocation
 3. **Planned:** online matches, city crews, tournaments, player accounts with rewards and affiliate dashboards.
 4. **Vision:** personal physical figures, real walls, live events.
 
-Apart from the Founder Mint start (11 November 2026, 11:11 CET Berlin), dates are not promised. Every step is announced when it is ready.
+Apart from the Founder Mint start (11 November 2026, 11:11 CET Berlin) and the mint end (31 January 2027, 23:59 CET Berlin), dates are not promised. Every step is announced when it is ready.
 
 ## 9. The game economy (planned real-money mode)
 
@@ -112,4 +112,4 @@ Schallern is in development. The demo may change, the collection may be delayed,
 The legal framework, terms, privacy and disclaimers are maintained by Culturetek Pte. Ltd. and published at https://schallern.io/legal.html. This document is informational, not an offer to sell securities and not investment advice. Versions of this whitepaper are published with their date at schallern.io/whitepaper/ and in the public repository linked there.
 
 - v0.1 · 16 October 2026 · first working draft
-- v0.2 · 18 October 2026 · game rules of demo V04 (no wall touch required, only foul = over the wall, 2 m touchdown line, round card, four throw styles), "physically calibrated" wording, random assignment with rarities and reveal after sell-out, one Candy Machine, price steps by number sold, no per-wallet limits, trait system and tier counts, commercial use of artwork, geo restriction
+- v0.2 · 18 October 2026 · game rules of demo V04 (no wall touch required, only foul = over the wall, 2 m touchdown line, round card, four throw styles), "physically calibrated" wording, random assignment with rarities and reveal after sell-out or at mint end, one Candy Machine, price steps by number sold, no per-wallet limits, trait system and tier counts, commercial use of artwork, geo restriction

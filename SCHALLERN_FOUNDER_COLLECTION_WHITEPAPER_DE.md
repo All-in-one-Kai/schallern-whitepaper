@@ -41,7 +41,7 @@ Demo-Punkte haben keinen Geldwert. Durch das Spielen der Demo entsteht kein NFT,
 - **Motive:** Schallern-Coins in acht sichtbaren Trait-Kategorien: Stufe, Material, Finish, Rand, Motiv (darunter die Charaktere des Spiels), Umschrift, Hintergrund (darunter 48 berühmte Wände) und Effekt.
 - **Standard:** Metaplex Core auf Solana; jedes Sammlerstück ist ein On-Chain-Asset in einer verifizierten Collection mit On-Chain-Royalty-Information.
 - **Seltenheit:** 8 Trait-Kategorien mit 129 Werten; jedes Stück hat jede Kategorie und einen eigenen Seltenheitsrang. Stufen: 11 Einzelstücke (1/1), 89 Legendary, 500 Epic, 1.400 Rare, 3.000 Uncommon und 5.000 Common. Seltenheit ist rein optisches Prestige.
-- **Zufällige Zuteilung und Reveal:** Käufer wählen weder Motiv noch Seltenheit noch Stufe. Bis zum Ausverkauf zeigt jedes Sammlerstück denselben Platzhalter. Vor dem Mint wird ein Provenance-Hash der vollständigen, geordneten Collection veröffentlicht und on-chain hinterlegt. Nach dem Ausverkauf ergibt sich der Startversatz aus einem vorab angekündigten künftigen Solana-Slot; so kann niemand, auch nicht das Team, steuern, wer welches Stück bekommt. Jeder kann das Ergebnis gegen den veröffentlichten Hash prüfen.
+- **Zufällige Zuteilung und Reveal:** Käufer wählen weder Motiv noch Seltenheit noch Stufe. Bis zum Reveal zeigt jedes Sammlerstück denselben Platzhalter. Vor dem Mint wird ein Provenance-Hash der vollständigen, geordneten Collection veröffentlicht und on-chain hinterlegt. Nach dem Ausverkauf oder, falls die Collection bis dahin nicht ausverkauft ist, zum Mint-Ende am 31. Januar 2027 ergibt sich der Startversatz aus einem vorab angekündigten künftigen Solana-Slot; so kann niemand, auch nicht das Team, steuern, wer welches Stück bekommt. Jeder kann das Ergebnis gegen den veröffentlichten Hash prüfen.
 - **Rechte am Artwork:** Halter dürfen das Artwork ihres Sammlerstücks kommerziell nutzen. Ausgenommen ist die Marke SCHALLERN (Name und Logo); sie bleibt beim Betreiber. Der endgültige Lizenztext wird mit den Mint-Bedingungen veröffentlicht.
 
 ## 5. Was ein Founder bekommt, und was nicht
@@ -56,8 +56,8 @@ Demo-Punkte haben keinen Geldwert. Durch das Spielen der Demo entsteht kein NFT,
 |---|---|
 | Chain und Standard | Solana, Metaplex Core, eine Core Candy Machine mit Candy Guard |
 | Preisstufen | nach verkaufter Stückzahl, nicht vom Käufer gewählt: #1–4.000 zu 0,5 SOL · #4.001–7.000 zu 1 SOL · #7.001–9.000 zu 1,5 SOL · #9.001–10.000 zu 2 SOL. Wer früh kauft, zahlt weniger; ein Kauf über eine Stufengrenze wird je Stück abgerechnet (geplantes Modell; endgültige Konditionen werden vor dem Start veröffentlicht) |
-| Zuteilung | zufälliges Artwork und zufällige Seltenheit für alle 10.000 aus einer Candy Machine, enthüllt nach dem Ausverkauf (siehe Abschnitt 4) |
-| Phasen | Start **11. November 2026, 11:11 Uhr Berliner Zeit (MEZ, 10:11 UTC)**; OG → Allowlist → öffentlich; die Allowlist bedeutet früheren Zugang. Termine und Änderungen nur auf schallern.io und in den offiziellen Discord- und Telegram-Kanälen |
+| Zuteilung | zufälliges Artwork und zufällige Seltenheit für alle 10.000 aus einer Candy Machine, enthüllt nach dem Ausverkauf oder zum Mint-Ende (31. Januar 2027, siehe Abschnitt 4) |
+| Phasen | OG **11. November 2026, 11:11 Uhr Berliner Zeit (MEZ, 10:11 UTC)** → Allowlist am selben Tag, **13:11 Uhr Berliner Zeit (12:11 UTC)** → öffentlich **12. November 2026, 13:11 Uhr Berliner Zeit (12:11 UTC)**; die Allowlist bedeutet früheren Zugang. Der Mint endet am **31. Januar 2027, 23:59 Uhr Berliner Zeit (22:59 UTC)**; danach können keine Coins mehr gemintet werden. Termine und Änderungen nur auf schallern.io und in den offiziellen Discord- und Telegram-Kanälen |
 | Grenzen | keine Limits je Wallet, in keiner Phase; Bot-Schutz durch Captcha, Rate-Prüfung und Bot-Tax; jede Mint-Transaktion wird vom Schallern-Backend gebaut und mitsigniert |
 | Wo | nur auf schallern.io; das Team schreibt nie zuerst und fragt nie nach Seed-Phrasen |
 | Verfügbarkeit | der Mint ist nur dort regional gesperrt, wo es die Bedingungen unserer Dienstleister verlangen |
@@ -79,7 +79,7 @@ Die Erlöse finanzieren die nächste Entwicklungsstufe von Schallern. Die geplan
 3. **Geplant:** Online-Matches, Stadt-Crews, Turniere, Spielerkonten mit Rewards- und Affiliate-Dashboards.
 4. **Vision:** persönliche physische Figuren, echte Wände, Live-Events.
 
-Abgesehen vom Start des Founder Mint (11. November 2026, 11:11 Uhr Berliner Zeit) werden Termine nicht versprochen. Jeder Schritt wird angekündigt, wenn er fertig ist.
+Abgesehen vom Start des Founder Mint (11. November 2026, 11:11 Uhr Berliner Zeit) und vom Mint-Ende (31. Januar 2027, 23:59 Uhr Berliner Zeit) werden Termine nicht versprochen. Jeder Schritt wird angekündigt, wenn er fertig ist.
 
 ## 9. Die Spielökonomie (geplanter Echtgeldbetrieb)
 
@@ -112,4 +112,4 @@ Schallern ist in Entwicklung. Die Demo kann sich ändern, die Collection kann si
 Rechtsrahmen, Bedingungen, Datenschutz und Disclaimer pflegt die Culturetek Pte. Ltd. und veröffentlicht sie unter https://schallern.io/legal.html. Dieses Dokument ist informativ, kein Angebot zum Verkauf von Wertpapieren und keine Anlageberatung. Versionen dieses Whitepapers werden mit Datum unter schallern.io/whitepaper/ und im dort verlinkten öffentlichen Repository veröffentlicht.
 
 - v0.1 · 16. Oktober 2026 · erster Arbeitsentwurf
-- v0.2 · 18. Oktober 2026 · Spielregeln der Demo V04 (keine Wandpflicht, einziger Fehlwurf = über die Mauer, 2-m-Aufsetzlinie, Rundenkarte, vier Wurfstile), Wortlaut „physikalisch kalibriert“, zufällige Zuteilung mit Seltenheiten und Reveal nach Ausverkauf, eine Candy Machine, Preisstufen nach verkaufter Stückzahl, keine Limits je Wallet, Trait-System und Stufenmengen, kommerzielle Nutzung des Artworks, regionale Sperre
+- v0.2 · 18. Oktober 2026 · Spielregeln der Demo V04 (keine Wandpflicht, einziger Fehlwurf = über die Mauer, 2-m-Aufsetzlinie, Rundenkarte, vier Wurfstile), Wortlaut „physikalisch kalibriert“, zufällige Zuteilung mit Seltenheiten und Reveal nach Ausverkauf oder zum Mint-Ende, eine Candy Machine, Preisstufen nach verkaufter Stückzahl, keine Limits je Wallet, Trait-System und Stufenmengen, kommerzielle Nutzung des Artworks, regionale Sperre

@@ -41,7 +41,7 @@ Demo puanlarının nakit değeri yoktur. Demoyu oynayarak hiçbir NFT, token vey
 - **Konular:** sekiz görünür özellik kategorisinde Schallern coin'leri: kademe, malzeme, kaplama, kenar, motif (oyunun karakterleri dahil), yazı, arka plan (48 ünlü duvar dahil) ve efekt.
 - **Standart:** Solana üzerinde Metaplex Core; her koleksiyon parçası, zincir üstü telif bilgisi içeren doğrulanmış bir koleksiyondaki tek bir zincir üstü varlıktır.
 - **Nadirlik:** 129 değerli 8 özellik kategorisi; her parça her kategoriye ve kendi nadirlik sırasına sahiptir. Kademeler: 11 tek parça (1/1), 89 Legendary, 500 Epic, 1.400 Rare, 3.000 Uncommon ve 5.000 Common. Nadirlik yalnızca görsel prestijdir.
-- **Rastgele dağıtım ve reveal:** alıcılar çizimi, nadirliği veya kademeyi seçmez. Tamamı satılana kadar her koleksiyon parçası aynı yer tutucu görseli gösterir. Mint açılmadan önce koleksiyonun tamamının sıralı hâline ait bir provenance hash'i yayımlanır ve zincir üstünde saklanır. Tamamı satıldıktan sonra başlangıç kaydırması, önceden duyurulmuş ileri tarihli bir Solana slot'undan alınır; böylece ekip dahil hiç kimse kimin hangi parçayı alacağını yönlendiremez. Herkes sonucu yayımlanan hash ile karşılaştırarak kontrol edebilir.
+- **Rastgele dağıtım ve reveal:** alıcılar çizimi, nadirliği veya kademeyi seçmez. Reveal'e kadar her koleksiyon parçası aynı yer tutucu görseli gösterir. Mint açılmadan önce koleksiyonun tamamının sıralı hâline ait bir provenance hash'i yayımlanır ve zincir üstünde saklanır. Tamamı satıldıktan sonra veya koleksiyon o zamana kadar tükenmezse 31 Ocak 2027'deki mint bitiminde başlangıç kaydırması, önceden duyurulmuş ileri tarihli bir Solana slot'undan alınır; böylece ekip dahil hiç kimse kimin hangi parçayı alacağını yönlendiremez. Herkes sonucu yayımlanan hash ile karşılaştırarak kontrol edebilir.
 - **Çizim hakları:** holder'lar koleksiyon parçalarının çizimini ticari olarak kullanabilir. SCHALLERN markası (isim ve logo) bunun dışındadır ve operatörde kalır. Nihai lisans metni mint şartlarıyla birlikte yayımlanır.
 
 ## 5. Bir founder ne alır, ne almaz
@@ -56,8 +56,8 @@ Demo puanlarının nakit değeri yoktur. Demoyu oynayarak hiçbir NFT, token vey
 |---|---|
 | Zincir ve standart | Solana, Metaplex Core, Candy Guard ile tek bir Core Candy Machine |
 | Fiyat basamakları | alıcı tarafından seçilmez, satılan adede göre belirlenir: #1–4.000: 0,5 SOL · #4.001–7.000: 1 SOL · #7.001–9.000: 1,5 SOL · #9.001–10.000: 2 SOL. Erken alıcılar daha az öder; bir basamağı aşan satın alma parça başına fiyatlandırılır (planlanan model; nihai şartlar başlangıçtan önce yayımlanır) |
-| Dağıtım | 10.000 parçanın tamamı için tek bir Candy Machine'den rastgele çizim ve nadirlik; tamamı satıldıktan sonra açıklanır (bkz. bölüm 4) |
-| Aşamalar | başlangıç **11 Kasım 2026, 11:11 CET Berlin (10:11 UTC)**; OG → Allowlist → herkese açık; Allowlist daha erken erişim demektir. Tarihler ve değişiklikler yalnızca schallern.io üzerinde ve resmî Discord ve Telegram kanallarında duyurulur |
+| Dağıtım | 10.000 parçanın tamamı için tek bir Candy Machine'den rastgele çizim ve nadirlik; tamamı satıldıktan sonra veya mint bitiminde açıklanır (31 Ocak 2027, bkz. bölüm 4) |
+| Aşamalar | OG **11 Kasım 2026, 11:11 CET Berlin (10:11 UTC)** → Allowlist aynı gün, **13:11 CET Berlin (12:11 UTC)** → herkese açık **12 Kasım 2026, 13:11 CET Berlin (12:11 UTC)**; Allowlist daha erken erişim demektir. Mint **31 Ocak 2027, 23:59 CET Berlin (22:59 UTC)** itibarıyla sona erer; sonrasında coin mint edilemez. Tarihler ve değişiklikler yalnızca schallern.io üzerinde ve resmî Discord ve Telegram kanallarında duyurulur |
 | Sınırlar | hiçbir aşamada cüzdan başına sınır yok; captcha, hız kontrolleri ve bot vergisiyle bot koruması; her mint işlemi Schallern arka ucu tarafından oluşturulur ve ortak imzalanır |
 | Nerede | yalnızca schallern.io üzerinde; ekip asla önce yazmaz ve asla seed cümlesi sormaz |
 | Erişilebilirlik | mint, yalnızca hizmet sağlayıcılarımızın şartlarının gerektirdiği yerlerde coğrafi olarak kısıtlanır |
@@ -79,7 +79,7 @@ Gelir, Schallern'in bir sonraki geliştirme aşamasını finanse eder. Planlanan
 3. **Planlanan:** çevrimiçi maçlar, şehir ekipleri, turnuvalar, ödüllü oyuncu hesapları ve affiliate panelleri.
 4. **Vizyon:** kişisel fiziksel figürler, gerçek duvarlar, canlı etkinlikler.
 
-Founder Mint başlangıcı (11 Kasım 2026, 11:11 CET Berlin) dışında tarihler vaat edilmez. Her adım hazır olduğunda duyurulur.
+Founder Mint başlangıcı (11 Kasım 2026, 11:11 CET Berlin) ve mint bitişi (31 Ocak 2027, 23:59 CET Berlin) dışında tarihler vaat edilmez. Her adım hazır olduğunda duyurulur.
 
 ## 9. Oyun ekonomisi (planlanan gerçek para modu)
 
@@ -112,4 +112,4 @@ Schallern geliştirme aşamasındadır. Demo değişebilir, koleksiyon gecikebil
 Yasal çerçeve, şartlar, gizlilik ve sorumluluk reddi Culturetek Pte. Ltd. tarafından yönetilir ve https://schallern.io/legal.html adresinde yayımlanır. Bu belge bilgilendirme amaçlıdır, menkul kıymet satış teklifi ve yatırım tavsiyesi değildir. Bu whitepaper'ın sürümleri tarihleriyle birlikte schallern.io/whitepaper/ adresinde ve orada bağlantısı verilen herkese açık depoda yayımlanır.
 
 - v0.1 · 16 Ekim 2026 · ilk çalışma taslağı
-- v0.2 · 18 Ekim 2026 · demo V04 oyun kuralları (duvara değme şartı yok, tek faul = duvarın üzerinden geçmek, 2 m temas çizgisi, tur kartı, dört atış stili), “fiziksel olarak kalibre edilmiş” ifadesi, nadirliklerle rastgele dağıtım ve tamamı satıldıktan sonra reveal, tek Candy Machine, satılan adede göre fiyat basamakları, cüzdan başına sınır yok, özellik sistemi ve kademe adetleri, çizimin ticari kullanımı, coğrafi kısıtlama
+- v0.2 · 18 Ekim 2026 · demo V04 oyun kuralları (duvara değme şartı yok, tek faul = duvarın üzerinden geçmek, 2 m temas çizgisi, tur kartı, dört atış stili), “fiziksel olarak kalibre edilmiş” ifadesi, nadirliklerle rastgele dağıtım ve tamamı satıldıktan sonra veya mint bitiminde reveal, tek Candy Machine, satılan adede göre fiyat basamakları, cüzdan başına sınır yok, özellik sistemi ve kademe adetleri, çizimin ticari kullanımı, coğrafi kısıtlama
