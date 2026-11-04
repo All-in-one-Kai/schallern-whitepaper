@@ -61,7 +61,7 @@ Los puntos de la demo no tienen valor en efectivo. Jugar la demo no crea ningún
 | Límites | sin límites por wallet en ninguna fase; protección antibots mediante captcha, comprobaciones de frecuencia e impuesto antibots; cada transacción de mint la construye y cofirma el backend de Schallern |
 | Dónde | solo en schallern.io; el equipo nunca escribe primero y nunca pide frases semilla |
 | Disponibilidad | el mint solo tiene restricciones geográficas donde lo exigen las condiciones de nuestros proveedores de servicios |
-| Tesorería | los ingresos del mint se pagan on-chain a una bóveda multisig 2 de 3 (Squads v4) de la operadora; ninguna clave por sí sola puede mover los fondos |
+| Tesorería | los ingresos del mint se pagan on-chain directamente a la wallet de tesorería de la operadora BnyQM68bhjavVbids93tFgK8cjetpEK3iGkFVe81Lp7R; esa misma wallet tiene la autoridad sobre la colección, la Candy Machine y el Candy Guard |
 | Regalías | 5 % de regalías en el mercado secundario, inscritas en la colección |
 | Almacenamiento | artwork y metadatos en Arweave (permanente); el artwork final se sube en el reveal |
 | Ensayo | el flujo completo (colección, una sola Candy Machine con placeholder y hash de procedencia on-chain, grupos de fase y de escalón de precio, firmante de backend, comprobaciones geográficas y de sanciones, pruebas de bots y de carga, reveal a partir de un slot de Solana, verificación pública) se ha ejecutado y verificado en la devnet de Solana en octubre de 2026 |
@@ -96,7 +96,7 @@ Operadora hasta que se funde la sociedad del juego: **Culturetek Pte. Ltd., 6 Ra
 ## 12. Tecnología
 
 - **Juego:** 3D en tiempo real con Three.js, física de moneda propia, determinista y calibrada físicamente, personajes con rigging y animación facial, telemetría para el balanceo. Los resultados en modos competitivos se calcularán en el servidor.
-- **Stack del mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, RPC de Helius, un firmante de backend en Node, una bóveda multisig Squads v4 para los ingresos.
+- **Stack del mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, RPC de Helius, un firmante de backend en Node, la wallet de tesorería de la operadora para los ingresos.
 - **Sitio web:** schallern.io (primero en inglés, alemán), páginas legales en schallern.io/legal.html.
 
 ## 13. Comunidad y recompensas

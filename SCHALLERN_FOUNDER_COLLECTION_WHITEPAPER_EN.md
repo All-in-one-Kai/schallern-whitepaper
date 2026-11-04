@@ -61,7 +61,7 @@ Demo points have no cash value. No NFT, token or payment is created by playing t
 | Limits | no per-wallet limits in any phase; bot protection through captcha, rate checks and bot tax; every mint transaction is built and co-signed by the Schallern backend |
 | Where | only on schallern.io; the team never messages first and never asks for seed phrases |
 | Availability | the mint is geo-restricted only where the terms of our service providers require it |
-| Treasury | mint proceeds are paid on-chain into a 2-of-3 multisig vault (Squads v4) of the operator; no single key can move the funds |
+| Treasury | mint proceeds are paid on-chain directly to the operator's treasury wallet BnyQM68bhjavVbids93tFgK8cjetpEK3iGkFVe81Lp7R; the same wallet holds the collection, Candy Machine and Candy Guard authority |
 | Royalties | 5 % secondary royalty, written into the collection |
 | Storage | artwork and metadata on Arweave (permanent); final artwork is uploaded at the reveal |
 | Rehearsal | the complete flow (collection, one Candy Machine with placeholder and on-chain provenance hash, phase and price-step groups, backend signer, geo and sanctions checks, bot and load tests, reveal from a Solana slot, public verification) has been run and verified on Solana devnet in October 2026 |
@@ -96,7 +96,7 @@ Operator until the game company is founded: **Culturetek Pte. Ltd., 6 Raffles Qu
 ## 12. Technology
 
 - **Game:** Three.js real-time 3D, custom deterministic and physically calibrated coin physics, rigged characters with facial animation, telemetry for balancing. Results in competitive modes will be computed server-side.
-- **Mint stack:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, a Node backend signer, a Squads v4 multisig vault for proceeds.
+- **Mint stack:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, a Node backend signer, the operator's treasury wallet for proceeds.
 - **Website:** schallern.io (English first, German), legal pages at schallern.io/legal.html.
 
 ## 13. Community and rewards

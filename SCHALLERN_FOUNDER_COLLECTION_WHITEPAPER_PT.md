@@ -61,7 +61,7 @@ Os pontos da demo não têm valor em dinheiro. Nenhum NFT, token ou pagamento é
 | Limites | sem limites por carteira em nenhuma fase; proteção anti-bot com captcha, verificações de frequência e taxa anti-bot; cada transação de mint é construída e coassinada pelo backend da Schallern |
 | Onde | somente em schallern.io; a equipe nunca envia a primeira mensagem e nunca pede frases-semente |
 | Disponibilidade | o mint só tem restrição geográfica onde os termos dos nossos prestadores de serviço exigem |
-| Tesouraria | os recursos do mint são pagos on-chain em um cofre multisig 2 de 3 (Squads v4) da operadora; nenhuma chave sozinha consegue movimentar os fundos |
+| Tesouraria | os recursos do mint são pagos on-chain diretamente na carteira de tesouraria da operadora BnyQM68bhjavVbids93tFgK8cjetpEK3iGkFVe81Lp7R; a mesma carteira detém a autoridade sobre a coleção, a Candy Machine e o Candy Guard |
 | Royalties | 5% de royalties no mercado secundário, gravados na coleção |
 | Armazenamento | arte e metadados na Arweave (permanente); a arte final é enviada na revelação |
 | Ensaio | o fluxo completo (coleção, uma única Candy Machine com imagem provisória e hash de proveniência on-chain, grupos de fase e de faixa de preço, assinador no backend, verificações geográficas e de sanções, testes de bot e de carga, revelação a partir de um slot da Solana, verificação pública) foi executado e verificado na devnet da Solana em outubro de 2026 |
@@ -96,7 +96,7 @@ Operadora até a fundação da empresa do jogo: **Culturetek Pte. Ltd., 6 Raffle
 ## 12. Tecnologia
 
 - **Jogo:** 3D em tempo real com Three.js, física de moeda própria, determinística e calibrada fisicamente, personagens com rig e animação facial, telemetria para balanceamento. Os resultados nos modos competitivos serão calculados no servidor.
-- **Stack do mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, um assinador de backend em Node, um cofre multisig Squads v4 para os recursos.
+- **Stack do mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, um assinador de backend em Node, a carteira de tesouraria da operadora para os recursos.
 - **Site:** schallern.io (inglês primeiro, alemão), páginas legais em schallern.io/legal.html.
 
 ## 13. Comunidade e recompensas

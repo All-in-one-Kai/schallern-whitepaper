@@ -61,7 +61,7 @@ Demo 积分没有现金价值。玩 Demo 不会生成任何 NFT、代币或付�
 | 限制 | 任何阶段都不设每钱包上限；通过验证码、频率检查和机器人税防范机器人；每笔 mint 交易都由 Schallern 后端构建并共同签名 |
 | 地点 | 仅在 schallern.io；团队绝不会主动私信，也绝不会索要助记词 |
 | 可用地区 | 仅在服务提供商条款要求时，mint 才设地区限制 |
-| 金库 | mint 收入在链上支付到运营方的 2/3 多签金库（Squads v4）；任何单一密钥都无法动用资金 |
+| 金库 | mint 收入在链上直接支付到运营方的金库钱包 BnyQM68bhjavVbids93tFgK8cjetpEK3iGkFVe81Lp7R；该钱包同时持有合集、Candy Machine 和 Candy Guard 的权限 |
 | 版税 | 5 % 二级市场版税，写入合集 |
 | 存储 | 作品和元数据存于 Arweave（永久）；最终作品在揭晓时上传 |
 | 演练 | 完整流程（合集、一台带占位图和链上来源哈希的 Candy Machine、阶段与价格阶梯分组、后端签名者、地区与制裁检查、机器人与负载测试、基于 Solana slot 的揭晓、公开验证）已于 2026 年 10 月在 Solana devnet 上运行并验证 |
@@ -96,7 +96,7 @@ Schallern 也在与私人投资者洽谈公司融资（计划最低 20,000 欧�
 ## 12. 技术
 
 - **游戏：** Three.js 实时 3D、自研的确定性且经物理校准的硬币物理、带面部动画的绑定角色、用于平衡调校的遥测。竞技模式下的结果将在服务器端计算。
-- **Mint 技术栈：** Metaplex Core、Core Candy Machine、Umi SDK、Arweave、Helius RPC、Node 后端签名者、用于收入的 Squads v4 多签金库。
+- **Mint 技术栈：** Metaplex Core、Core Candy Machine、Umi SDK、Arweave、Helius RPC、Node 后端签名者、用于收入的运营方金库钱包。
 - **网站：** schallern.io（英文优先，另有德文），法律页面位于 schallern.io/legal.html。
 
 ## 13. 社区与奖励

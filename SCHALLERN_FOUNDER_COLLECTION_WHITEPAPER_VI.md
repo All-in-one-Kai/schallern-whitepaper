@@ -61,7 +61,7 @@ Schallern là game ném xu được hiệu chỉnh vật lý, chơi trên trình
 | Giới hạn | không giới hạn mỗi ví ở bất kỳ giai đoạn nào; chống bot bằng captcha, kiểm tra tần suất và thuế bot; mọi giao dịch mint được backend Schallern xây dựng và đồng ký |
 | Ở đâu | chỉ trên schallern.io; đội ngũ không bao giờ nhắn tin trước và không bao giờ hỏi seed phrase |
 | Khả dụng | đợt mint chỉ bị giới hạn theo khu vực địa lý ở những nơi điều khoản của các nhà cung cấp dịch vụ của chúng tôi yêu cầu |
-| Kho bạc | tiền thu từ mint được thanh toán on-chain vào két multisig 2/3 (Squads v4) của đơn vị vận hành; không một khóa đơn lẻ nào có thể chuyển tiền |
+| Kho bạc | tiền thu từ mint được thanh toán on-chain trực tiếp vào ví ngân quỹ của đơn vị vận hành BnyQM68bhjavVbids93tFgK8cjetpEK3iGkFVe81Lp7R; chính ví này nắm quyền đối với bộ sưu tập, Candy Machine và Candy Guard |
 | Tiền bản quyền | 5 % tiền bản quyền thứ cấp, ghi vào bộ sưu tập |
 | Lưu trữ | artwork và metadata trên Arweave (vĩnh viễn); artwork cuối cùng được tải lên khi reveal |
 | Diễn tập | toàn bộ quy trình (bộ sưu tập, một Candy Machine với hình giữ chỗ và mã băm provenance on-chain, các nhóm theo giai đoạn và bậc giá, bộ ký backend, kiểm tra địa lý và lệnh trừng phạt, kiểm thử bot và tải, reveal từ một slot Solana, xác minh công khai) đã được chạy và xác minh trên Solana devnet vào tháng 10 năm 2026 |
@@ -96,7 +96,7 @@ Schallern cũng trao đổi với các nhà đầu tư cá nhân về việc tà
 ## 12. Công nghệ
 
 - **Game:** 3D thời gian thực Three.js, vật lý xu tự xây dựng, tất định và được hiệu chỉnh vật lý, nhân vật có khung xương với hoạt hình khuôn mặt, telemetry để cân bằng. Kết quả ở các chế độ thi đấu sẽ được tính phía máy chủ.
-- **Ngăn xếp mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, bộ ký backend Node, két multisig Squads v4 cho tiền thu.
+- **Ngăn xếp mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, bộ ký backend Node, ví ngân quỹ của đơn vị vận hành cho tiền thu.
 - **Website:** schallern.io (tiếng Anh trước, tiếng Đức), trang pháp lý tại schallern.io/legal.html.
 
 ## 13. Cộng đồng và phần thưởng

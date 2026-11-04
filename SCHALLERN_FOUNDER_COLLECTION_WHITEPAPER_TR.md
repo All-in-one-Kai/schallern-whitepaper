@@ -61,7 +61,7 @@ Demo puanlarının nakit değeri yoktur. Demoyu oynayarak hiçbir NFT, token vey
 | Sınırlar | hiçbir aşamada cüzdan başına sınır yok; captcha, hız kontrolleri ve bot vergisiyle bot koruması; her mint işlemi Schallern arka ucu tarafından oluşturulur ve ortak imzalanır |
 | Nerede | yalnızca schallern.io üzerinde; ekip asla önce yazmaz ve asla seed cümlesi sormaz |
 | Erişilebilirlik | mint, yalnızca hizmet sağlayıcılarımızın şartlarının gerektirdiği yerlerde coğrafi olarak kısıtlanır |
-| Hazine | mint geliri zincir üstünde operatörün 3 anahtardan 2'siyle yönetilen multisig kasasına (Squads v4) ödenir; tek bir anahtar fonları hareket ettiremez |
+| Hazine | mint geliri zincir üstünde doğrudan operatörün hazine cüzdanına BnyQM68bhjavVbids93tFgK8cjetpEK3iGkFVe81Lp7R ödenir; koleksiyon, Candy Machine ve Candy Guard yetkisi de aynı cüzdandadır |
 | Telifler | koleksiyona yazılmış %5 ikincil telif |
 | Depolama | çizimler ve meta veriler Arweave üzerinde (kalıcı); nihai çizimler reveal sırasında yüklenir |
 | Prova | tam akış (koleksiyon, yer tutucu ve zincir üstü provenance hash'li tek bir Candy Machine, aşama ve fiyat basamağı grupları, arka uç imzalayıcı, coğrafya ve yaptırım kontrolleri, bot ve yük testleri, bir Solana slot'undan reveal, herkese açık doğrulama) Ekim 2026'da Solana devnet üzerinde çalıştırıldı ve doğrulandı |
@@ -96,7 +96,7 @@ Oyun şirketi kurulana kadar operatör: **Culturetek Pte. Ltd., 6 Raffles Quay, 
 ## 12. Teknoloji
 
 - **Oyun:** Three.js gerçek zamanlı 3D, özel, deterministik ve fiziksel olarak kalibre edilmiş para fiziği, yüz animasyonlu riglenmiş karakterler, dengeleme için telemetri. Rekabetçi modlardaki sonuçlar sunucu tarafında hesaplanacaktır.
-- **Mint yığını:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, bir Node arka uç imzalayıcı, gelirler için bir Squads v4 multisig kasa.
+- **Mint yığını:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, bir Node arka uç imzalayıcı, gelirler için operatörün hazine cüzdanı.
 - **Web sitesi:** schallern.io (önce İngilizce, Almanca), yasal sayfalar schallern.io/legal.html adresinde.
 
 ## 13. Topluluk ve ödüller

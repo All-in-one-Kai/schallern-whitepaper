@@ -61,7 +61,7 @@ Demo-Punkte haben keinen Geldwert. Durch das Spielen der Demo entsteht kein NFT,
 | Grenzen | keine Limits je Wallet, in keiner Phase; Bot-Schutz durch Captcha, Rate-Prüfung und Bot-Tax; jede Mint-Transaktion wird vom Schallern-Backend gebaut und mitsigniert |
 | Wo | nur auf schallern.io; das Team schreibt nie zuerst und fragt nie nach Seed-Phrasen |
 | Verfügbarkeit | der Mint ist nur dort regional gesperrt, wo es die Bedingungen unserer Dienstleister verlangen |
-| Treasury | Mint-Erlöse gehen on-chain in einen 2-von-3-Multisig-Tresor (Squads v4) des Betreibers; kein einzelner Schlüssel kann die Mittel bewegen |
+| Treasury | Mint-Erlöse gehen on-chain direkt an die Treasury-Wallet des Betreibers BnyQM68bhjavVbids93tFgK8cjetpEK3iGkFVe81Lp7R; dieselbe Wallet hält die Rechte an Collection, Candy Machine und Candy Guard |
 | Royalties | 5 % Sekundär-Royalty, in der Collection hinterlegt |
 | Speicher | Artwork und Metadaten auf Arweave (permanent); das endgültige Artwork wird beim Reveal hochgeladen |
 | Generalprobe | der komplette Ablauf (Collection, eine Candy Machine mit Platzhalter und On-Chain-Provenance-Hash, Gruppen für Phasen und Preisstufen, Backend-Signer, Geo- und Sanktionsprüfung, Bot- und Lasttests, Reveal aus einem Solana-Slot, öffentliche Prüfung) wurde im Oktober 2026 auf Solana Devnet durchgeführt und geprüft |
@@ -96,7 +96,7 @@ Betreiber bis zur Gründung der Spielgesellschaft: **Culturetek Pte. Ltd., 6 Raf
 ## 12. Technik
 
 - **Spiel:** Three.js Echtzeit-3D, eigene deterministische, physikalisch kalibrierte Coin-Physik, geriggte Charaktere mit Mimik, Telemetrie fürs Balancing. Ergebnisse in Wettbewerbsmodi werden serverseitig berechnet.
-- **Mint-Stack:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, Node-Backend-Signer, Squads-v4-Multisig-Tresor für die Erlöse.
+- **Mint-Stack:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, Node-Backend-Signer, Treasury-Wallet des Betreibers für die Erlöse.
 - **Website:** schallern.io (Englisch zuerst, Deutsch), Rechtliches unter schallern.io/legal.html.
 
 ## 13. Community und Belohnungen

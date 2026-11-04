@@ -61,7 +61,7 @@ Poin demo tidak bernilai tunai. Tidak ada NFT, token, atau pembayaran yang dibua
 | Batas | tidak ada batas per dompet di fase mana pun; perlindungan bot lewat captcha, pemeriksaan laju, dan pajak bot; setiap transaksi mint dibangun dan ditandatangani bersama oleh backend Schallern |
 | Di mana | hanya di schallern.io; tim tidak pernah mengirim pesan lebih dulu dan tidak pernah meminta seed phrase |
 | Ketersediaan | mint dibatasi secara geografis hanya jika ketentuan penyedia layanan kami mewajibkannya |
-| Treasury | hasil mint dibayarkan on-chain ke brankas multisig 2-dari-3 (Squads v4) milik operator; tidak ada satu kunci pun yang bisa memindahkan dana sendirian |
+| Treasury | hasil mint dibayarkan on-chain langsung ke wallet treasury operator BnyQM68bhjavVbids93tFgK8cjetpEK3iGkFVe81Lp7R; wallet yang sama memegang otoritas atas koleksi, Candy Machine, dan Candy Guard |
 | Royalti | royalti sekunder 5 %, tertulis di dalam koleksi |
 | Penyimpanan | karya seni dan metadata di Arweave (permanen); karya seni final diunggah saat reveal |
 | Gladi | alur lengkap (koleksi, satu Candy Machine dengan placeholder dan hash provenance on-chain, grup fase dan tahap harga, penanda tangan backend, pemeriksaan geo dan sanksi, uji bot dan beban, reveal dari slot Solana, verifikasi publik) telah dijalankan dan diverifikasi di Solana devnet pada Oktober 2026 |
@@ -96,7 +96,7 @@ Operator sampai perusahaan game didirikan: **Culturetek Pte. Ltd., 6 Raffles Qua
 ## 12. Teknologi
 
 - **Game:** 3D real-time Three.js, fisika koin buatan sendiri yang deterministik dan dikalibrasi secara fisik, karakter ber-rig dengan animasi wajah, telemetri untuk penyeimbangan. Hasil dalam mode kompetitif akan dihitung di sisi server.
-- **Stack mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, penanda tangan backend Node, brankas multisig Squads v4 untuk hasil mint.
+- **Stack mint:** Metaplex Core, Core Candy Machine, Umi SDK, Arweave, Helius RPC, penanda tangan backend Node, wallet treasury operator untuk hasil mint.
 - **Situs web:** schallern.io (bahasa Inggris lebih dulu, Jerman), halaman legal di schallern.io/legal.html.
 
 ## 13. Komunitas dan reward
